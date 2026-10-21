@@ -94,8 +94,8 @@
  "remake.tutorial.title": "Training run",
  "remake.tutorial.coach": "Ship's computer",
  "remake.tutorial.next": "Next",
- "remake.tutorial.skip": "Skip",
- "remake.tutorial.skipTitle": "End the training and keep flying",
+ "remake.tutorial.skip": "Skip step",
+ "remake.tutorial.skipTitle": "Skip just this step (the action is done for you)",
  "remake.tutorial.running": "Time is running…",
  "remake.tutorial.offer.title": "New on the bridge?",
  "remake.tutorial.offer.text": "A short training run shows the bridge, the five departments and your first fight, step by step. The clock stops while I explain.",
@@ -192,5 +192,8 @@
  "remake.help.engineering.tips": "By default the engines come after Shields and Weapons, so the ship crawls. Cruising: engines on top. Fighting: shields, weapons and scanners first, and slow down.",
  "remake.help.repair.what": "Robodroids repair damaged and broken systems; destroyed ones are lost for good.",
  "remake.help.repair.controls": "Tap a damaged system, choose 1–7 droids and “Assign”. The repair queue works top-down; ⋮⋮ reorders, ✕ cancels.",
- "remake.help.repair.tips": "Cargo climate and stabiliser first (the cargo!), then life support, reactors and engines. More droids work faster but leave fewer for other jobs."
+ "remake.help.repair.tips": "Cargo climate and stabiliser first (the cargo!), then life support, reactors and engines. More droids work faster but leave fewer for other jobs.",
+ "remake.tutorial.exit": "Exit",
+ "remake.tutorial.exitTitle": "End the training and keep flying",
+ "remake.tutorial.exitConfirm": "Leave the training? The voyage goes on as a normal game. You can replay the training from the title screen or Settings."
 }

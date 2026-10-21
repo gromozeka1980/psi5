@@ -36,7 +36,9 @@ export class Tutorial {
       if (k === 'next') this.go(this.i + 1);
       else if (k === 'ff') this.ff();
       else if (k === 'fix') { this.step.fix(); this.key = ''; }
-      else if (k === 'skip' || k === 'continue') this.end(true);
+      else if (k === 'skip') this.skipStep();
+      else if (k === 'exit') { if (confirm(t('remake.tutorial.exitConfirm'))) this.end(true); }
+      else if (k === 'continue') this.end(true);
       else if (k === 'title') this.end(true, true);
     });
     this.steps = this.script();
@@ -52,9 +54,11 @@ export class Tutorial {
     const ship = c => t(`ship.${SHIP_NAMES[TUTORIAL.course][S().contactIdClass[c]] || 'other'}.one`);
     const weak = c => t(`weapon.${WEAPONS[Math.max(0, S().contactWeaknessKnown[c] - 1)]}`);
     const sheetHas = sel => !$('#sheet').hidden && !!$('#sheet-body ' + sel);
+    const closeSheet = () => { if (!$('#sheet').hidden) $('#sheet-body [data-act="closeSheet"]')?.click(); };
     const examine = (id, who) => ({ id, text: () => t(`remake.tutorial.${id}`, { letter: L(this[who]), examine: t('remake.action.examine') }),
       tab: 1, target: () => `#p-scanning [data-act="examine"][data-t="${this[who]}"]`, allow: [() => `#p-scanning [data-act="examine"][data-t="${this[who]}"]`],
-      done: s => s.contactListed[this[who]], skip: s => this[who] < 0 || !s.contactClass[this[who]] || s.contactListed[this[who]] });
+      done: s => s.contactListed[this[who]], skip: s => this[who] < 0 || !s.contactClass[this[who]] || s.contactListed[this[who]],
+      fix: () => this.game.commands.examine(this[who], S().examLen) });
     return [
       { id: 'welcome', next: true, params: () => ({ destination: t('mission.0.destination') }) },
       { id: 'strip', target: '#strip', next: true },
@@ -62,8 +66,8 @@ export class Tutorial {
       { id: 'depts', target: () => isPhone() ? '#tabbar' : '#panels', next: true,
         text: () => t('remake.tutorial.depts') + (isPhone() ? ' ' + t('remake.tutorial.depts.phone') : '') },
       { id: 'eng', tab: 3, target: '#p-engineering [data-list="power"]', allow: ['#p-engineering [data-list="power"]'],
-        params: () => ({ engines: t('power.class.C') }), done: s => s.priority[0] === 2 },
-      { id: 'speed', tab: 2, target: '#p-navigation .throttle', allow: ['#p-navigation [data-act="speed"][data-v="8"]'], done: s => s.reqSpeed === 8 },
+        params: () => ({ engines: t('power.class.C') }), done: s => s.priority[0] === 2, fix: () => this.game.commands.rankDevice(2, 0) },
+      { id: 'speed', tab: 2, target: '#p-navigation .throttle', allow: ['#p-navigation [data-act="speed"][data-v="8"]'], done: s => s.reqSpeed === 8, fix: () => this.game.commands.setSpeed(8, false) },
       { id: 'evasive', tab: 2, target: '#p-navigation [data-act="evasive"]', next: true },
       { id: 'runContact', run: () => this.contact(-1) >= 0, after: () => { this.a = this.contact(-1); },
         force: () => this.spawn(8), progress: s => t('remake.tutorial.prog.flight', { pos: s.pos, min: s.minutes }) },
@@ -71,9 +75,9 @@ export class Tutorial {
       { id: 'runMsg', run: s => s.msgCount.some(n => n > 0), progress: () => t('remake.tutorial.prog.msg') },
       { id: 'msg', target: '#console [data-act="nextMsg"]', allow: ['#console [data-act="nextMsg"]', '#console [data-act="ack"]'],
         params: () => ({ next: t('remake.msg.next') }), done: s => !this.msgBefore || s.msgCount.reduce((x, y) => x + y, 0) < this.msgBefore,
-        enter: s => { this.msgBefore = s.msgCount.reduce((x, y) => x + y, 0); }, skip: s => !s.msgCount.some(n => n > 0) },
+        enter: s => { this.msgBefore = s.msgCount.reduce((x, y) => x + y, 0); }, skip: s => !s.msgCount.some(n => n > 0), fix: () => this.game.commands.nextMessage() },
       { id: 'slow', tab: 2, target: '#p-navigation .throttle', allow: ['#p-navigation [data-act="speed"][data-v="2"]', '#p-navigation [data-act="speed"][data-v="1"]'],
-        done: s => s.reqSpeed === 1 || s.reqSpeed === 2 },
+        done: s => s.reqSpeed === 1 || s.reqSpeed === 2, fix: () => this.game.commands.setSpeed(2, false) },
       // the new speed takes a moment, then Engineering shares the power out again: check Scanners and Weapons got some
       { id: 'runPower', run: s => s.speed === s.reqSpeed && this.waited >= 360, ticks: 120 * 60, progress: s => t('remake.tutorial.prog.speed', { speed: s.speed, req: s.reqSpeed }) },
       { id: 'power', tab: 3, target: '#p-engineering [data-list="power"]', allow: ['#p-engineering [data-list="power"]'], skip: s => this.powered(s),
@@ -101,7 +105,8 @@ export class Tutorial {
         target: () => sheetHas('[data-act="fireGo"]') ? '#sheet-body .opts .sug' : sheetHas('[data-act="fireAt"]') ? `#sheet-body [data-act="fireAt"][data-t="${this.b}"]` : '#p-weapons [data-act="fireMenu"]',
         allow: ['#p-weapons [data-act="fireMenu"]', () => `#sheet-body [data-act="fireAt"][data-t="${this.b}"]`, '#sheet-body [data-act="fireGo"]', '#sheet-body [data-act="shots"]', '#sheet-body [data-act="closeSheet"]'],
         params: () => ({ fire: t('remake.action.fire'), letter: L(this.b), weapon: weak(this.b) }),
-        done: s => s.targetOrdered[this.b] },
+        done: s => s.targetOrdered[this.b],
+        fix: () => { closeSheet(); this.game.commands.fire(this.b, 10, Math.max(0, S().contactWeaknessKnown[this.b] - 1), S().orderCount); } },
       { id: 'orders', tab: 0, target: '#p-weapons [data-list="orders"]', next: true, skip: s => !s.targetOrdered[this.b] },
       { id: 'runFire', run: s => s.contactKilledBy[this.b] || !s.contactClass[this.b], rate: FIGHT, ticks: 120 * 90, params: () => ({ letter: L(this.b) }),
         skip: s => !s.targetOrdered[this.b], force: () => this.kill(this.b), after: () => { this.killed = !!this.S.contactKilledBy[this.b]; },
@@ -113,7 +118,8 @@ export class Tutorial {
         sub: () => sheetHas('[data-act="repairGo"]') ? 'repairSheet' : 'repair',
         target: () => sheetHas('[data-act="repairGo"]') ? '#sheet-body' : `#p-repair [data-act="repairPick"][data-s="${this.slot}"]`,
         allow: [() => `#p-repair [data-act="repairPick"][data-s="${this.slot}"]`, '#sheet-body [data-act="droids"]', '#sheet-body [data-act="repairGo"]', '#sheet-body [data-act="closeSheet"]'],
-        params: () => ({ system: t('system.' + SYSTEMS[FAULT_SYS]), assign: t('remake.action.assign') }), done: s => s.slotWanted[this.slot] > 0 },
+        params: () => ({ system: t('system.' + SYSTEMS[FAULT_SYS]), assign: t('remake.action.assign') }), done: s => s.slotWanted[this.slot] > 0,
+        fix: () => { closeSheet(); if (this.slot >= 0) this.game.commands.repairAssign(this.slot, 4, S().queueLen); } },
       { id: 'repDone', tab: 4, target: '#p-repair [data-list="repair"]', next: true },
       { id: 'schedule', target: '#strip', next: true },
       { id: 'done', final: true },
@@ -205,6 +211,15 @@ export class Tutorial {
     if (st.run) { if (st.run(S)) { st.after?.(); this.go(this.i + 1); } else if (++this.waited > (st.ticks || WAIT_TICKS)) this.ff(); }
     else if (st.done && st.done(S)) this.go(this.i + 1);
   }
+  // "Пропустить шаг": an action step is done for the player (so later lessons still have their preconditions),
+  // a wait is fast-forwarded, an explanation just goes on
+  skipStep() {
+    const st = this.step;
+    if (!st) return;
+    if (st.run) return this.ff();
+    if (st.fix) { st.fix(); this.key = ''; if (!st.done) this.go(this.i + 1); return; }   // done() advances when the order lands
+    this.go(this.i + 1);
+  }
   // a wait ends now: nudge the engine so the lesson happens, then go on
   ff() {
     const st = this.step;
@@ -246,8 +261,9 @@ export class Tutorial {
         ${running ? `<p class="coach-run">${esc(st.run ? '' : t('remake.tutorial.running'))}</p>` : ''}
         <div class="coach-foot">${st.final
           ? `<button class="btn ghost" data-tut="title">${esc(t('remake.tutorial.toTitle'))}</button><button class="btn primary" data-tut="continue">${esc(t('remake.tutorial.continue'))}</button>`
-          : `<button class="btn ghost small" data-tut="skip" title="${esc(t('remake.tutorial.skipTitle'))}">${esc(t('remake.tutorial.skip'))}</button>
-             ${st.fix && !needTab && !running ? `<button class="btn small" data-tut="fix">${esc(t('remake.tutorial.fixIt'))}</button>` : ''}
+          : `<button class="btn ghost small" data-tut="exit" title="${esc(t('remake.tutorial.exitTitle'))}">${esc(t('remake.tutorial.exit'))}</button>
+             ${!st.run && !running ? `<button class="btn ghost small" data-tut="skip" title="${esc(t('remake.tutorial.skipTitle'))}">${esc(t('remake.tutorial.skip'))}</button>` : ''}
+             ${st.fix && !running ? `<button class="btn small" data-tut="fix">${esc(t('remake.tutorial.fixIt'))}</button>` : ''}
              ${st.run ? `<button class="btn primary small" data-tut="ff">${esc(t('remake.tutorial.ff'))}</button>` : ''}
              ${st.next && !needTab ? `<button class="btn primary small" data-tut="next">${esc(t('remake.tutorial.next'))}</button>` : ''}`}</div>`;
     }
