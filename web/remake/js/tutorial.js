@@ -35,7 +35,6 @@ export class Tutorial {
       const k = b.dataset.tut;
       if (k === 'next') this.go(this.i + 1);
       else if (k === 'ff') this.ff();
-      else if (k === 'fix') { this.step.fix(); this.key = ''; }
       else if (k === 'skip') this.skipStep();
       else if (k === 'exit') { if (confirm(t('remake.tutorial.exitConfirm'))) this.end(true); }
       else if (k === 'continue') this.end(true);
@@ -81,7 +80,7 @@ export class Tutorial {
       // the new speed takes a moment, then Engineering shares the power out again: check Scanners and Weapons got some
       { id: 'runPower', run: s => s.speed === s.reqSpeed && this.waited >= 360, ticks: 120 * 60, progress: s => t('remake.tutorial.prog.speed', { speed: s.speed, req: s.reqSpeed }) },
       { id: 'power', tab: 3, target: '#p-engineering [data-list="power"]', allow: ['#p-engineering [data-list="power"]'], skip: s => this.powered(s),
-        params: () => ({ who: this.starved().join(', '), e: t('power.class.E'), f: t('power.class.F'), fix: t('remake.tutorial.fixIt') }),
+        params: () => ({ who: this.starved().join(', '), e: t('power.class.E'), f: t('power.class.F') }),
         done: s => Math.max(idx(s, 1), idx(s, 3)) < Math.min(idx(s, 4), idx(s, 5)),
         fix: () => { const c = this.game.commands; c.rankDevice(5, 5); c.rankDevice(4, 5); } },
       examine('examA', 'a'),
@@ -103,7 +102,8 @@ export class Tutorial {
       { id: 'fire', tab: 0, skip: s => !this.ready(s),
         sub: () => sheetHas('[data-act="fireGo"]') ? 'fireWeapon' : sheetHas('[data-act="fireAt"]') ? 'firePick' : 'fire',
         target: () => sheetHas('[data-act="fireGo"]') ? '#sheet-body .opts .sug' : sheetHas('[data-act="fireAt"]') ? `#sheet-body [data-act="fireAt"][data-t="${this.b}"]` : '#p-weapons [data-act="fireMenu"]',
-        allow: ['#p-weapons [data-act="fireMenu"]', () => `#sheet-body [data-act="fireAt"][data-t="${this.b}"]`, '#sheet-body [data-act="fireGo"]', '#sheet-body [data-act="shots"]', '#sheet-body [data-act="closeSheet"]'],
+        allow: ['#p-weapons [data-act="fireMenu"]', () => `#p-scanning [data-act="fireAt"][data-t="${this.b}"]`, '#cv-main', '#cv-inset',
+          () => `#sheet-body [data-act="fireAt"][data-t="${this.b}"]`, '#sheet-body [data-act="fireGo"]', '#sheet-body [data-act="shots"]', '#sheet-body [data-act="closeSheet"]'],
         params: () => ({ fire: t('remake.action.fire'), letter: L(this.b), weapon: weak(this.b) }),
         done: s => s.targetOrdered[this.b],
         fix: () => { closeSheet(); this.game.commands.fire(this.b, 10, Math.max(0, S().contactWeaknessKnown[this.b] - 1), S().orderCount); } },
@@ -262,10 +262,9 @@ export class Tutorial {
         <div class="coach-foot">${st.final
           ? `<button class="btn ghost" data-tut="title">${esc(t('remake.tutorial.toTitle'))}</button><button class="btn primary" data-tut="continue">${esc(t('remake.tutorial.continue'))}</button>`
           : `<button class="btn ghost small" data-tut="exit" title="${esc(t('remake.tutorial.exitTitle'))}">${esc(t('remake.tutorial.exit'))}</button>
-             ${!st.run && !running ? `<button class="btn ghost small" data-tut="skip" title="${esc(t('remake.tutorial.skipTitle'))}">${esc(t('remake.tutorial.skip'))}</button>` : ''}
-             ${st.fix && !running ? `<button class="btn small" data-tut="fix">${esc(t('remake.tutorial.fixIt'))}</button>` : ''}
-             ${st.run ? `<button class="btn primary small" data-tut="ff">${esc(t('remake.tutorial.ff'))}</button>` : ''}
-             ${st.next && !needTab ? `<button class="btn primary small" data-tut="next">${esc(t('remake.tutorial.next'))}</button>` : ''}`}</div>`;
+             ${st.run ? `<button class="btn primary small" data-tut="ff">${esc(t('remake.tutorial.ff'))}</button>`
+               : st.next ? (needTab ? '' : `<button class="btn primary small" data-tut="next">${esc(t('remake.tutorial.next'))}</button>`)
+               : running ? '' : `<button class="btn small" data-tut="skip" title="${esc(t('remake.tutorial.skipTitle'))}">${esc(t('remake.tutorial.skip'))}</button>`}`}</div>`;
     }
     if (st.run) {                                // live progress: only the text changes, so the buttons keep working
       const p = box.querySelector('.coach-run'), s = st.progress?.(this.S) || t('remake.tutorial.running');
