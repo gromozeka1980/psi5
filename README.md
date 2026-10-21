@@ -1,5 +1,7 @@
 # Psi 5 Trading Company (Accolade, 1985/86) — web remake
 
+**Play:** https://gromozeka1980.github.io/psi5/ — remake: [/remake/](https://gromozeka1980.github.io/psi5/remake/), exact 1:1 original: [/classic.html](https://gromozeka1980.github.io/psi5/classic.html). GitHub Pages deploys `web/` on every push to `main` (`.github/workflows/pages.yml`).
+
 GOG DOS version as the reference (originals in this folder are untouched).
 
 ## Plan
@@ -30,7 +32,8 @@ idle points (keyboard poll with empty buffer, BIOS tick read, two delay loops on
 and the port follow it, so runs are reproducible and comparable byte for byte; the browser delivers ticks in real time.
 
 ## Run
-`python -m http.server 8772` in this folder → http://localhost:8772/web/index.html (original: `/_dosref/index.html`).
+`python -m http.server 8772` in this folder → http://localhost:8772/web/ (landing), `/web/remake/`, `/web/classic.html`; DOSBox reference: `/_dosref/index.html`.
+The web build reads the game's data files from `web/game/` (copies of the original *.BIN) and original sprites/tunes from `web/orig/`. The tools (emulator, lockstep, recordings) need the original GOG install (PSI5.EXE, SEL.EXE, *.BIN in this folder), which is not in the repo.
 Checks: `node tools/diff.mjs w:300 k:Enter w:60 k:^D w:7000 w:30000`, `node tools/fcheck.mjs PSI5.EXE`.
 
 ## Status
