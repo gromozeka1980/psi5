@@ -1,6 +1,6 @@
 # Psi 5 Trading Company (Accolade, 1985/86) — web remake
 
-**Play:** https://gromozeka1980.github.io/psi5/ — remake: [/remake/](https://gromozeka1980.github.io/psi5/remake/), exact 1:1 original: [/classic.html](https://gromozeka1980.github.io/psi5/classic.html). GitHub Pages deploys `web/` on every push to `main` (`.github/workflows/pages.yml`).
+**Play:** https://gromozeka1980.github.io/psi5/ — remake: [/remake/](https://gromozeka1980.github.io/psi5/remake/), exact 1:1 original: [/classic.html](https://gromozeka1980.github.io/psi5/classic.html). Article (ru): [how the game works inside, PDF](https://gromozeka1980.github.io/psi5/docs/psi5-inside.pdf) (source `_dosref/article/`). GitHub Pages deploys `web/` on every push to `main` (`.github/workflows/pages.yml`).
 
 GOG DOS version as the reference (originals in this folder are untouched).
 
