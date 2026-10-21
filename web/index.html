@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Psi 5 Trading Company</title>
+<meta name="description" content="Psi 5 Trading Company (Accolade, 1986): a modern remake and an exact 1:1 recreation of the DOS original in the browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ctext x=%2216%22 y=%2226%22 font-size=%2226%22 text-anchor=%22middle%22 fill=%22%2300d0d0%22%3E%CE%A8%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg: #0b1024; --fg: #e8ecff; --dim: #9aa3c7; --acc: #ffb347; --cy: #34e0e8; --card: #151c3a; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  body { background: radial-gradient(ellipse at 50% 0%, #2a1f4a 0%, var(--bg) 60%) fixed; }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { margin: 0 0 4px; font-size: clamp(28px, 6vw, 48px); letter-spacing: .04em; }
+  h1 span { color: var(--cy); }
+  .sub { color: var(--dim); margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  a.card { display: block; text-decoration: none; color: inherit; background: var(--card); border: 1px solid #2c3770; border-radius: 14px; overflow: hidden; transition: transform .15s, border-color .15s; }
+  a.card:hover, a.card:focus-visible { transform: translateY(-2px); border-color: var(--acc); outline: none; }
+  .pic { aspect-ratio: 16/9; background: #000 center/cover no-repeat; }
+  .pic.px { image-rendering: pixelated; background-size: contain; }
+  .body { padding: 14px 16px 18px; }
+  .body b { display: block; font-size: 20px; color: var(--acc); margin-bottom: 4px; }
+  .body p { margin: 0; color: var(--dim); font-size: 15px; }
+  footer { margin-top: 28px; color: var(--dim); font-size: 13px; }
+  footer a { color: var(--cy); }
+</style></head>
+<body><main>
+  <h1>PSI <span>5</span> TRADING COMPANY</h1>
+  <p class="sub" data-ru="Accolade, 1986 — в браузере, на компьютере и телефоне." data-en="Accolade, 1986 — in the browser, on desktop and phone.">Accolade, 1986 — в браузере, на компьютере и телефоне.</p>
+  <div class="grid">
+    <a class="card" href="remake/"><div class="pic" style="background-image:url('remake/art/bg.title.s.webp')"></div>
+      <div class="body"><b data-ru="Римейк" data-en="Remake">Римейк</b>
+      <p data-ru="Новая графика и интерфейс, управление мышью и касанием, обучение, исправленные баги оригинала, русский и английский." data-en="New art and interface, mouse and touch, a tutorial, the original's bugs fixed, Russian and English.">Новая графика и интерфейс, управление мышью и касанием, обучение, исправленные баги оригинала, русский и английский.</p></div></a>
+    <a class="card" href="classic.html"><div class="pic px" style="background-image:url('orig/sel/title.png')"></div>
+      <div class="body"><b data-ru="Оригинал 1:1" data-en="Original 1:1">Оригинал 1:1</b>
+      <p data-ru="Точная копия DOS-версии 1986 года: тот же код, та же графика CGA, тот же звук. Управление с клавиатуры." data-en="An exact copy of the 1986 DOS version: same logic, same CGA graphics, same sound. Keyboard controls.">Точная копия DOS-версии 1986 года: тот же код, та же графика CGA, тот же звук. Управление с клавиатуры.</p></div></a>
+  </div>
+  <footer data-ru="Фанатский некоммерческий проект. Psi 5 Trading Company © 1985–1986 Accolade." data-en="A non-commercial fan project. Psi 5 Trading Company © 1985–1986 Accolade.">Фанатский некоммерческий проект. Psi 5 Trading Company © 1985–1986 Accolade.</footer>
+</main>
+<script>
+  // English for non-Russian browsers
+  if (!/^ru\b/i.test(navigator.language || '')) { document.documentElement.lang = 'en'; document.querySelectorAll('[data-en]').forEach(e => { e.textContent = e.dataset.en; }); }
+</script>
+</body></html>

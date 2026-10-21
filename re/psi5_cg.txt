@@ -1,0 +1,187 @@
+f_0082 163 GEN f_022f f_0256 f_03fb f_04c5 f_0693 f_076d f_0786 f_0988 f_09b7 f_0e37 f_1cfa f_295d f_32bf f_32f2 f_3396 f_3be5 f_51d8 f_5219 f_5247 f_55f9 f_5af1 f_5aff f_5b50 f_5b6f f_5b86 f_5baa f_5bc4 f_5be1 f_6868 f_6b4c f_6b7c f_6c10 f_6c78 f_6db1 f_70a4 f_7160 f_72da
+f_022f 16     f_04c5 f_0672 f_0693 f_6880
+f_0256 74 GEN f_022f f_0317 f_033e f_0384 f_06bf f_06f4 f_0786 f_669b
+f_0317 15     f_04c5 f_0672 f_0693 f_06bf
+f_033e 28 GEN f_0317 f_06bf f_06f4 f_656b f_6880
+f_0384 43 GEN f_0317 f_04c5 f_0672 f_06bf f_06f4 f_0786
+f_03fb 40 GEN f_0463 f_04c5 f_0672 f_0786 f_5683
+f_0463 39 GEN f_04c5 f_0672 f_0786 f_5b5f f_5b6f f_5bc4 f_6bc7
+f_04c5 10     f_5b0a
+f_04eb 59     
+f_058e 37     
+f_05f3 47     
+f_0672 11     f_5ccb
+f_0693 11     f_5b0a
+f_06bf 18     f_5bf8
+f_06f4 28 GEN f_04c5 f_0748 f_5bf8
+f_0748 14 GEN f_0d97
+f_076d 10 GEN 
+f_0786 124 GEN f_0672 f_06bf f_06f4 f_08e6 f_0946 f_0d97 f_5b97 f_6579 f_72e1
+f_08e6 32     f_0988 f_0abc f_0d87 f_1402 f_1443 f_217d f_2277 f_2c51 f_2ca6 f_36f2 f_3772 f_412f f_4230 f_5b0a f_6880
+f_0946 29 GEN f_5a79
+f_0988 16     f_09b7 f_5b0a
+f_09b7 104     f_5b0a f_5bf8 f_6e26
+f_0abc 28     
+f_0b08 31     f_5b0a
+f_0b61 10     f_5b0a
+f_0b7c 185     f_5bf8 f_69ee f_6a01 f_6a14 f_6a27 f_6a51 f_6a75 f_6aa6 f_6af1 f_6e26
+f_0d6b 11     f_5bf8
+f_0d87 8     
+f_0d97 56 GEN f_0d87 f_1402 f_1443 f_16f3 f_217d f_2277 f_243d f_2c51 f_2ca6 f_2cf2 f_36f2 f_3772 f_37be f_412f f_4230 f_4479 f_4922 f_64aa f_66dc f_6e26
+f_0e37 60 GEN f_022f f_0786 f_0ed5 f_0ef6 f_0f17 f_0f54 f_0f97 f_101d f_1172 f_132d
+f_0ed5 14     f_04c5 f_0672 f_0693 f_06bf
+f_0ef6 14     f_04c5 f_0672 f_0693 f_06bf
+f_0f17 21 GEN f_06bf f_06f4 f_0988 f_0abc f_0ed5 f_1402
+f_0f54 22 GEN f_06bf f_06f4 f_0988 f_0abc f_0ed5 f_1443
+f_0f97 54 GEN f_04c5 f_05f3 f_0672 f_06bf f_06f4 f_0786 f_0ed5 f_15b3
+f_101d 130 GEN f_04c5 f_058e f_05f3 f_0672 f_06bf f_06f4 f_0786 f_0ed5
+f_1172 169 GEN f_04c5 f_04eb f_058e f_0672 f_06bf f_06f4 f_0786 f_0ed5 f_14f3
+f_132d 86 GEN f_04c5 f_04eb f_0672 f_06bf f_06f4 f_0786 f_0ef6 f_14f3 f_15b3
+f_1402 24     f_0b7c
+f_1443 61     f_0b08 f_0b61 f_0b7c f_0d6b
+f_14f3 68     
+f_15b3 70     
+f_167c 42     
+f_16f3 520     f_14f3 f_15b3 f_167c f_23df f_64be f_6526 f_70a4
+f_1cfa 67 GEN f_022f f_0786 f_1dab f_1de2 f_1e25 f_1e68 f_1ee5 f_1fbe f_20eb
+f_1dab 22     f_04c5 f_0672 f_0693 f_06bf
+f_1de2 22 GEN f_06bf f_06f4 f_0988 f_0abc f_1dab f_217d
+f_1e25 22 GEN f_06bf f_06f4 f_0988 f_0abc f_1dab f_2277
+f_1e68 51 GEN f_04c5 f_04eb f_0672 f_06bf f_06f4 f_0786 f_1dab f_23df
+f_1ee5 87 GEN f_04c5 f_04eb f_058e f_0672 f_06bf f_06f4 f_0786 f_1dab f_232b
+f_1fbe 118 GEN f_04c5 f_04eb f_058e f_0672 f_06bf f_06f4 f_0786 f_1dab f_232b
+f_20eb 59 GEN f_04c5 f_04eb f_0672 f_06bf f_06f4 f_0786 f_1dab f_232b f_23df
+f_217d 89     f_0b08 f_0b61 f_0b7c f_0d6b
+f_2277 63     f_0b08 f_0b61 f_0b7c f_0d6b
+f_232b 66     
+f_23df 34     
+f_243d 440     f_232b f_64be f_6526 f_7086 f_70a4
+f_295d 72 GEN f_022f f_0786 f_2a1c f_2a53 f_2a90 f_2acd f_2ae7 f_2b90
+f_2a1c 22     f_04c5 f_0672 f_0693 f_06bf
+f_2a53 21 GEN f_06bf f_06f4 f_0988 f_0abc f_2a1c f_2c51
+f_2a90 21 GEN f_06bf f_06f4 f_0988 f_0abc f_2a1c f_2ca6
+f_2acd 10 GEN f_06bf f_06f4 f_2a1c
+f_2ae7 62 GEN f_04c5 f_0672 f_06bf f_06f4 f_0786 f_2a1c
+f_2b90 70 GEN f_04c5 f_0672 f_06bf f_06f4 f_0786 f_2a1c
+f_2c51 32     f_0b7c
+f_2ca6 29     f_0b7c
+f_2cf2 452 GEN f_322f f_32a3 f_32bf f_32f2 f_3318 f_5b3a f_64be f_6526 f_6db1 f_6de0
+f_322f 42     
+f_32a3 11     
+f_32bf 21     f_09b7 f_5bf8
+f_32f2 16     f_70a4
+f_3318 54 GEN f_076d f_32bf f_32f2 f_51d8 f_5219 f_6880 f_70a4
+f_3396 55 GEN f_022f f_0786 f_342b f_3462 f_349f f_34dc f_356b f_3662
+f_342b 22     f_04c5 f_0672 f_0693 f_06bf
+f_3462 21 GEN f_06bf f_06f4 f_0988 f_0abc f_342b f_36f2
+f_349f 21 GEN f_06bf f_06f4 f_0988 f_0abc f_342b f_3772
+f_34dc 52 GEN f_04c5 f_0672 f_06bf f_06f4 f_0786 f_342b
+f_356b 92 GEN f_04c5 f_0672 f_06bf f_06f4 f_0786 f_342b
+f_3662 52 GEN f_04c5 f_0672 f_06bf f_06f4 f_0786 f_342b
+f_36f2 48     f_0b7c
+f_3772 29     f_0b7c
+f_37be 352     f_70a4
+f_3be5 67 GEN f_022f f_0786 f_3c96 f_3ccd f_3d10 f_3d53 f_3dd4 f_3f29 f_408f
+f_3c96 22     f_04c5 f_0672 f_0693 f_06bf
+f_3ccd 22 GEN f_06bf f_06f4 f_0988 f_0abc f_3c96 f_412f
+f_3d10 22 GEN f_06bf f_06f4 f_0988 f_0abc f_3c96 f_4230
+f_3d53 52 GEN f_04c5 f_05f3 f_0672 f_06bf f_06f4 f_0786 f_3c96 f_42e4
+f_3dd4 130 GEN f_04c5 f_058e f_05f3 f_0672 f_06bf f_06f4 f_0786 f_3c96
+f_3f29 141 GEN f_04c5 f_04eb f_058e f_0672 f_06bf f_06f4 f_0786 f_3c96 f_43a2
+f_408f 65 GEN f_04c5 f_04eb f_0672 f_06bf f_06f4 f_0786 f_3c96 f_42e4 f_43a2
+f_412f 92     f_0b08 f_0b61 f_0b7c f_0d6b
+f_4230 63     f_0b08 f_0b61 f_0b7c f_0d6b
+f_42e4 69     f_48e0 f_64be f_6526
+f_43a2 79     f_6526
+f_4479 345     f_42e4 f_43a2 f_4872 f_48e0 f_64be f_6526
+f_4872 40     
+f_48e0 24     
+f_4922 738     f_15b3 f_23df f_32a3 f_42e4 f_516d f_51d8 f_5219 f_64be f_6526 f_6d79 f_7086 f_70a4
+f_516d 43     f_32bf f_51d8 f_5219 f_6880 f_6db1
+f_51d8 20     f_5bf8 f_6ee0 f_705e
+f_5219 15     f_5bf8
+f_5247 281     
+f_55f9 52 GEN f_03fb f_0748 f_0786 f_5683 f_569b f_5733 f_57cb f_57e2 f_5840 f_5aff f_5b6f
+f_5683 11     f_04c5 f_0672 f_0693
+f_569b 44 GEN f_06bf f_06f4 f_0786 f_0988 f_0abc f_0d87 f_1402 f_1443 f_217d f_2277 f_2c51 f_2ca6 f_36f2 f_3772 f_412f f_4230 f_5683 f_5712
+f_5712 14     f_04c5 f_0672 f_0693 f_06bf
+f_5733 44 GEN f_06bf f_06f4 f_0786 f_0988 f_0abc f_0d87 f_1402 f_1443 f_217d f_2277 f_2c51 f_2ca6 f_36f2 f_3772 f_412f f_4230 f_5683 f_57aa
+f_57aa 14     f_04c5 f_0672 f_0693 f_06bf
+f_57cb 10 GEN f_06bf f_06f4 f_5683 f_57e2
+f_57e2 37     f_0988 f_0abc f_0b7c
+f_5840 89     
+f_594e 49 GEN f_04c5 f_0786 f_59e8
+f_59e8 58     f_04c5 f_0672 f_0693 f_08e6 f_0988 f_5b6f
+f_5a79 47 GEN f_5b6f f_7160
+f_5af1 7 GEN f_5a79 f_7086
+f_5aff 6 GEN f_5a79
+f_5b0a 17     
+f_5b3a 11     
+f_5b50 4     
+f_5b5f 5     f_6c78
+f_5b6f 6     f_5bc4 f_6c78
+f_5b86 5     
+f_5b97 7     f_5bed
+f_5baa 13 GEN 
+f_5bc4 12     
+f_5be1 6     f_5bed
+f_5bed 7     
+f_5bf8 60     f_6e26
+f_5ca3 14     f_5bf8
+f_5ccb 27     f_5bf8
+f_5d20 64     f_6e13
+f_5e08 50     f_7086
+f_5eba 64     f_5f8a f_7086
+f_5f8a 35     f_7086
+f_6006 59     
+f_60b4 117     
+f_6242 66     f_6e13 f_7086
+f_631e 67     f_63c5
+f_63c5 101     
+f_64aa 7     
+f_64be 38     f_66c0
+f_6526 29     f_66c0
+f_656b 7     f_657f
+f_6579 1     
+f_657f 80     f_5b0a f_5bf8 f_66c0 f_693a
+f_669b 11     f_66c0
+f_66c0 9     f_5ca3 f_6e13
+f_66dc 20     f_08e6 f_6579
+f_671c 42     f_5bed f_6e13 f_7086
+f_67aa 63     f_7145
+f_6868 9     f_6dac
+f_6880 47     f_5b0a f_5bf8 f_70a4
+f_693a 59     f_6dac f_70e2
+f_69ee 8     f_6b0c
+f_6a01 8     f_6b0c
+f_6a14 8     f_6b0c
+f_6a27 16     f_6b0c
+f_6a51 14     f_6b0c
+f_6a75 17     f_6b0c
+f_6aa6 25     f_6b0c
+f_6af1 11     f_6b0c
+f_6b0c 27     
+f_6b4c 24     f_70a4
+f_6b7c 33     
+f_6bc7 16     
+f_6c10 34     
+f_6c78 23     
+f_6ca9 79     
+f_6d79 22     
+f_6dac 3     
+f_6db1 19     
+f_6de0 22     
+f_6e13 3     
+f_6e26 59     f_5bed f_5d20 f_5e08 f_5eba f_6006 f_60b4 f_6242 f_631e f_671c f_67aa f_6ee0 f_6f2f f_6fb3 f_7016 f_705e f_70a4
+f_6ee0 13     
+f_6f2f 49     f_7086
+f_6fb3 35     f_7086
+f_7016 25     
+f_705e 15     
+f_7086 11     
+f_70a4 27     
+f_70e2 43     
+f_7145 10     
+f_7160 132     
+f_72da 5     
+f_72e1 16     

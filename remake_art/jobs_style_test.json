@@ -1,0 +1,176 @@
+{
+ "styles": {
+  "a": "1980s science-fiction paperback and game-box cover art: airbrushed acrylic painting, smooth gradients, warm amber key light and orange rim light against deep blue space and cool teal shadows, polished chrome and enamel-painted metal, glowing CRT screens with soft bloom, subtle film grain, rich saturated but not garish colours, no text, no lettering, no frame, no border",
+  "b": "1980s retro-futurist airbrush illustration in a cyan, magenta and silver-grey palette that echoes the original CGA colours: deep space-black shadows, neon-cyan CRT glow and magenta accent lights, chrome highlights with star-burst glints, warm amber rim light on faces, faint scanline sheen on screens, film grain, no text, no lettering, no frame, no border",
+  "c": "1980s 'used future' sci-fi matte painting on board: visible painterly brushwork over airbrushed gradients, warm tungsten and amber cockpit light, scuffed painted metal panels with rivets and decals without letters, chrome trim, green-and-amber CRT phosphor glow, heavy film grain and slight halation like a scanned 1984 book cover, no text, no lettering, no frame, no border"
+ },
+ "tails": {
+  "place": "Wide cinematic 16:9 key art, no readable text, no lettering, no logo. Keep the upper third calmer so a title logo can be placed over it.",
+  "portrait": "Bust portrait, facing the viewer, centred, head and shoulders filling most of the square frame, at his bridge station: softly out-of-focus console with glowing CRT screens behind him. Keep the character's species, face shape, hair, eyes and clothing colours from the reference image, but redraw it as a high-quality painting.",
+  "ship": "A single spaceship in a front three-quarter view, centred, whole ship visible with generous margin, on a plain pure black background with no stars and no planet, so it can be cut out. Keep the silhouette and colour layout of the tiny pixel sprite in the reference image."
+ },
+ "jobs": {
+  "boris-a": {
+   "kind": "portrait",
+   "style": "a",
+   "sheet": "portrait.boris",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  },
+  "boris-b": {
+   "kind": "portrait",
+   "style": "b",
+   "sheet": "portrait.boris",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  },
+  "boris-c": {
+   "kind": "portrait",
+   "style": "c",
+   "sheet": "portrait.boris",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  },
+  "aymu-a": {
+   "kind": "portrait",
+   "style": "a",
+   "sheet": "portrait.aymu",
+   "original": "docs/modern/assets/crew/AYMU_face.png",
+   "out": "portrait.aymu.png",
+   "refFiles": [
+    "remake_art/refs/aymu_face.png"
+   ],
+   "prompt": "Mr. Aymu Skump, a 30-year-old Jamico navigator, the small figure seated at the console in the attached 1986 pixel-art picture. Small humanoid alien with pale grey skin, a thick mop of black hair falling over the forehead, a large bulbous magenta nose, dark uniform. Cool, rugged, very professional chief navigation officer; calm, slightly smug half-smile."
+  },
+  "aymu-b": {
+   "kind": "portrait",
+   "style": "b",
+   "sheet": "portrait.aymu",
+   "original": "docs/modern/assets/crew/AYMU_face.png",
+   "out": "portrait.aymu.png",
+   "refFiles": [
+    "remake_art/refs/aymu_face.png"
+   ],
+   "prompt": "Mr. Aymu Skump, a 30-year-old Jamico navigator, the small figure seated at the console in the attached 1986 pixel-art picture. Small humanoid alien with pale grey skin, a thick mop of black hair falling over the forehead, a large bulbous magenta nose, dark uniform. Cool, rugged, very professional chief navigation officer; calm, slightly smug half-smile."
+  },
+  "aymu-c": {
+   "kind": "portrait",
+   "style": "c",
+   "sheet": "portrait.aymu",
+   "original": "docs/modern/assets/crew/AYMU_face.png",
+   "out": "portrait.aymu.png",
+   "refFiles": [
+    "remake_art/refs/aymu_face.png"
+   ],
+   "prompt": "Mr. Aymu Skump, a 30-year-old Jamico navigator, the small figure seated at the console in the attached 1986 pixel-art picture. Small humanoid alien with pale grey skin, a thick mop of black hair falling over the forehead, a large bulbous magenta nose, dark uniform. Cool, rugged, very professional chief navigation officer; calm, slightly smug half-smile."
+  },
+  "pirate-a": {
+   "kind": "ship",
+   "style": "a",
+   "sheet": "ship.class4",
+   "original": "docs/modern/assets/psi5/ship_t4_0x6ad4.png",
+   "out": "ship.class4.png",
+   "refFiles": [
+    "remake_art/refs/ship_t4.png"
+   ],
+   "prompt": "A menacing pirate raider starship redrawn from the attached tiny pixel sprite: a compact armoured central pod with two glowing magenta eye-like sensor lights, and long swept-up angular wings like a bat or a seagull. Teal-painted hull plates with silver-grey trim, weapon pods under the wings."
+  },
+  "pirate-b": {
+   "kind": "ship",
+   "style": "b",
+   "sheet": "ship.class4",
+   "original": "docs/modern/assets/psi5/ship_t4_0x6ad4.png",
+   "out": "ship.class4.png",
+   "refFiles": [
+    "remake_art/refs/ship_t4.png"
+   ],
+   "prompt": "A menacing pirate raider starship redrawn from the attached tiny pixel sprite: a compact armoured central pod with two glowing magenta eye-like sensor lights, and long swept-up angular wings like a bat or a seagull. Teal-painted hull plates with silver-grey trim, weapon pods under the wings."
+  },
+  "pirate-c": {
+   "kind": "ship",
+   "style": "c",
+   "sheet": "ship.class4",
+   "original": "docs/modern/assets/psi5/ship_t4_0x6ad4.png",
+   "out": "ship.class4.png",
+   "refFiles": [
+    "remake_art/refs/ship_t4.png"
+   ],
+   "prompt": "A menacing pirate raider starship redrawn from the attached tiny pixel sprite: a compact armoured central pod with two glowing magenta eye-like sensor lights, and long swept-up angular wings like a bat or a seagull. Teal-painted hull plates with silver-grey trim, weapon pods under the wings."
+  },
+  "title-a": {
+   "kind": "place",
+   "style": "a",
+   "sheet": "bg.title",
+   "original": "docs/modern/assets/psi5/arrival.png",
+   "out": "bg.title.png",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Key art for the game: the PSI-5, a stubby saucer-and-hull cargo freighter like the one in the attached 1986 pixel picture, pulling away from Starbase 27, a huge ring-shaped space station with docking lights, above a glowing violet and blue nebula and the curve of a magenta planet. Three small angular pirate raiders with glowing eye-lights approach in the far distance."
+  },
+  "title-b": {
+   "kind": "place",
+   "style": "b",
+   "sheet": "bg.title",
+   "original": "docs/modern/assets/psi5/arrival.png",
+   "out": "bg.title.png",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Key art for the game: the PSI-5, a stubby saucer-and-hull cargo freighter like the one in the attached 1986 pixel picture, pulling away from Starbase 27, a huge ring-shaped space station with docking lights, above a glowing violet and blue nebula and the curve of a magenta planet. Three small angular pirate raiders with glowing eye-lights approach in the far distance."
+  },
+  "title-c": {
+   "kind": "place",
+   "style": "c",
+   "sheet": "bg.title",
+   "original": "docs/modern/assets/psi5/arrival.png",
+   "out": "bg.title.png",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Key art for the game: the PSI-5, a stubby saucer-and-hull cargo freighter like the one in the attached 1986 pixel picture, pulling away from Starbase 27, a huge ring-shaped space station with docking lights, above a glowing violet and blue nebula and the curve of a magenta planet. Three small angular pirate raiders with glowing eye-lights approach in the far distance."
+  },
+  "modeltest-gpt-image-2": {
+   "kind": "portrait",
+   "style": "a",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  },
+  "modeltest-gpt-image-2.5-flare": {
+   "kind": "portrait",
+   "style": "a",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  },
+  "modeltest-gpt-image-2.5-sunburst": {
+   "kind": "portrait",
+   "style": "a",
+   "original": "docs/modern/assets/crew/BORIS_face.png",
+   "out": "portrait.boris.png",
+   "refFiles": [
+    "remake_art/refs/boris_face.png"
+   ],
+   "prompt": "Boris Tarkov, a 47-year-old Jargonian weapons officer, the man in the upper right of the attached 1986 pixel-art picture. Pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped. Teal military jacket with wide lapels over a magenta shirt. Fearless, aggressive, suspicious loner veteran of the Jagon Wars."
+  }
+ }
+}

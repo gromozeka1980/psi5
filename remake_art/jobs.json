@@ -1,0 +1,1131 @@
+{
+ "style": "1980s science-fiction paperback and game-box cover art: airbrushed acrylic painting, smooth gradients, warm amber key light and orange rim light against deep blue space and cool teal shadows, polished chrome and enamel-painted metal, glowing CRT screens with soft bloom, subtle film grain, rich saturated but not garish colours, cyan and magenta accent lights, no text, no lettering, no frame, no border",
+ "tails": {
+  "portrait": "Bust portrait, facing the viewer, centred, head and shoulders filling most of the square frame, at the bridge station shown in the second reference image: softly out-of-focus console with glowing CRT screens behind. Keep the species, face shape, hair, eyes, markings and clothing colours of the character from the reference images (the first is the selection portrait, the second shows the same character at the station), but redraw it as a high-quality painting. Exactly one character, normal anatomy for its species, no extra limbs.",
+  "ship": "A single spaceship in a front three-quarter view, slightly from above, centred, the whole ship visible with generous margin, on a plain pure black background with no stars, no planet and no glow on the background, so it can be cut out. Keep the silhouette, proportions and colour layout of the tiny 1986 pixel sprite in the reference image: teal-painted hull plates, silver-grey highlights, magenta lights where the sprite has magenta pixels.",
+  "object": "Centred on a plain pure black background, nothing else in the picture, so it can be cut out.",
+  "wide": "Wide cinematic composition, no people unless described, no readable text, no lettering, no logo.",
+  "tall": "Portrait-format composition."
+ },
+ "jobs": {
+  "portrait.boris": {
+   "slot": "portrait.boris",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_boris.png",
+    "remake_art/refs/face_boris.png"
+   ],
+   "prompt": "Boris Tarkov, Jargonian, age 47, weapons officer of a 1980s space cargo freighter. Appearance: pale grey humanoid skin, a bristling crest of spiky cyan hair, large round staring eyes under heavy angry brows, long narrow face, tight-lipped; teal military jacket with wide lapels over a magenta shirt. Personality: No family. Fearless. aggressive & precise. Quick reactions. Has a passion for combat.",
+   "original": "docs/modern/assets/sel/portrait_00_Boris.png",
+   "who": "boris"
+  },
+  "portrait.q6d": {
+   "slot": "portrait.q6d",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_q6d.png",
+    "remake_art/refs/face_q6d.png"
+   ],
+   "prompt": "Q6-D, Vaccdroid, age 12, weapons officer of a 1980s space cargo freighter. Appearance: a combat robot: a tall domed helmet head with vertical cyan and silver stripes, a wide black visor band with small slots across the eyes, chunky silver-grey shoulder armour, one magenta-gloved robot hand. Personality: Quick thinking. Cool in most situations. Communicates clearly.",
+   "original": "docs/modern/assets/sel/portrait_01_Q6D.png",
+   "who": "q6d"
+  },
+  "portrait.yeela": {
+   "slot": "portrait.yeela",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_yeela.png",
+    "remake_art/refs/face_yeela.png"
+   ],
+   "prompt": "Yeela, Glork, age 270, weapons officer of a 1980s space cargo freighter. Appearance: a hulking shaggy alien completely covered in long draping fur in magenta, silver-grey and teal streaks, two big round goggle-like eyes on top of the fur mound, a long segmented trunk hanging down the middle of the face, no visible mouth. Personality: Reliable, loyal & friendly. Good natural judgement. Has telepathic ability.",
+   "original": "docs/modern/assets/sel/portrait_02_Yeela.png",
+   "who": "yeela"
+  },
+  "portrait.alzott": {
+   "slot": "portrait.alzott",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_alzott.png",
+    "remake_art/refs/face_alzott.png"
+   ],
+   "prompt": "Al (Bull's Eye) Zott, Olerio, age 32, weapons officer of a 1980s space cargo freighter. Appearance: human-looking, neat short black hair, thick black rectangular glasses, square jaw, confident; teal jacket over a magenta shirt. Personality: Professional & strong leader. Tactical & technical expert. Single. Cool under pressure.",
+   "original": "docs/modern/assets/sel/portrait_03_Al.png",
+   "who": "alzott"
+  },
+  "portrait.skulard": {
+   "slot": "portrait.skulard",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_skulard.png",
+    "remake_art/refs/face_skulard.png"
+   ],
+   "prompt": "Skulard Prablyk, Balnarvian, age 40, weapons officer of a 1980s space cargo freighter. Appearance: round broad pale-grey face with a wide friendly grin, round eyes with cyan eyelids, short teal cap of hair; teal tunic with a magenta collar. Personality: Quick & precise. Has a wide range of body temperature tolerance. Fluent in Zabian languages.",
+   "original": "docs/modern/assets/sel/portrait_04_Skulard.png",
+   "who": "skulard"
+  },
+  "portrait.grolo": {
+   "slot": "portrait.grolo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_grolo.png",
+    "remake_art/refs/face_grolo.png"
+   ],
+   "prompt": "Grolo, Scollian, age 17, weapons officer of a 1980s space cargo freighter. Appearance: a young koala-like alien: round fuzzy pale-grey head, big round ears with teal insides, small magenta nose, little round glasses, magenta shirt. Personality: Even tempered, friendly & helpful. A sharp thinker. Known as a very good shot.",
+   "original": "docs/modern/assets/sel/portrait_05_Grolo.png",
+   "who": "grolo"
+  },
+  "portrait.jaru": {
+   "slot": "portrait.jaru",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_jaru.png",
+    "remake_art/refs/face_jaru.png"
+   ],
+   "prompt": "Jaru Lagon, Palagonon, age 127, scanning officer of a 1980s space cargo freighter. Appearance: slender teal-skinned alien with a tall cage-like dome of vertical magenta hair strands, a long thin ribbed silver neck, calm narrow eyes; magenta gown with a wide silver collar. Personality: Efficient, precise & self- motivated. Independent aggressive nature.",
+   "original": "docs/modern/assets/sel/portrait_06_Jaru.png",
+   "who": "jaru"
+  },
+  "portrait.phyzo": {
+   "slot": "portrait.phyzo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_phyzo.png",
+    "remake_art/refs/face_phyzo.png"
+   ],
+   "prompt": "Phyzo Thynx, Dragoolas, age 25, scanning officer of a 1980s space cargo freighter. Appearance: tall bald elongated pale-grey head, narrow slit eyes, a small teal fin behind the ear, thin lips; high-collared magenta coat with a teal collar. Personality: Strong telepathic senses. Responds to commands well. Reacts well under pressure.",
+   "original": "docs/modern/assets/sel/portrait_07_Phyzo.png",
+   "who": "phyzo"
+  },
+  "portrait.blustan": {
+   "slot": "portrait.blustan",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_blustan.png",
+    "remake_art/refs/face_blustan.png"
+   ],
+   "prompt": "Blustan, Reptilius, age 112, scanning officer of a 1980s space cargo freighter. Appearance: a reptile alien: teal scaly skin, a flat wedge-shaped head, huge round goggle eyes, magenta blush-coloured cheek scales, wide lipless mouth; magenta robe with a teal clasp. Personality: Communicates well. Has a logically structured mind & speaks 4 languages. Finishes jobs efficiently.",
+   "original": "docs/modern/assets/sel/portrait_08_Blustan.png",
+   "who": "blustan"
+  },
+  "portrait.nargo": {
+   "slot": "portrait.nargo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_nargo.png",
+    "remake_art/refs/face_nargo.png"
+   ],
+   "prompt": "Nargo Kloya, Lighton, age 16, scanning officer of a 1980s space cargo freighter. Appearance: a young girl of 16 with pale-grey skin, a round face and big eyes, voluminous magenta helmet-shaped hair with a checked pattern on top, small magenta lips; magenta and silver striped top. Personality: Good communicator. Responds well under stress. Friendly, but shy. Very strong telepathic skills.",
+   "original": "docs/modern/assets/sel/portrait_09_Nargo.png",
+   "who": "nargo"
+  },
+  "portrait.churglk": {
+   "slot": "portrait.churglk",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_churglk.png",
+    "remake_art/refs/face_churglk.png"
+   ],
+   "prompt": "Churglik, Flipogian, age 340, scanning officer of a 1980s space cargo freighter. Appearance: very old alien with a long teal face, narrow tired eyes, magenta lips, a spiky crown of magenta hair and long magenta hair strands falling past the shoulders; teal and magenta checked knitted sweater. Personality: Loyal & dependable Good self-motivation. Excellent endurance levels. Communicates well.",
+   "original": "docs/modern/assets/sel/portrait_10_Churglik.png",
+   "who": "churglk"
+  },
+  "portrait.mike": {
+   "slot": "portrait.mike",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_mike.png",
+    "remake_art/refs/face_mike.png"
+   ],
+   "prompt": "Mike of Morgon, Hirolian, age 24, scanning officer of a 1980s space cargo freighter. Appearance: human-looking young man with swept silver-grey hair, square magenta-tinted glasses, a thin smile; teal sweater. Personality: Loves danger. Independent & friendly. Upper command material. Strong & gets his way.",
+   "original": "docs/modern/assets/sel/portrait_11_Mike.png",
+   "who": "mike"
+  },
+  "portrait.klg": {
+   "slot": "portrait.klg",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_klg.png",
+    "remake_art/refs/face_klg.png"
+   ],
+   "prompt": "KLG-7A, Vaccdroid, age 6, navigation officer of a 1980s space cargo freighter. Appearance: a small spindly robot whose head is a cluster of four round camera-lens pods on short stalks, a thin silver body with teal cables draped over it. Personality: Acute eyesight & very precise in his actions. Extremely rugged individual.",
+   "original": "docs/modern/assets/sel/portrait_12_KLG7A.png",
+   "who": "klg"
+  },
+  "portrait.tegra": {
+   "slot": "portrait.tegra",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_tegra.png",
+    "remake_art/refs/face_tegra.png"
+   ],
+   "prompt": "Tegra Kloya, Lighton, age 26, navigation officer of a 1980s space cargo freighter. Appearance: a young woman with smooth pale-grey skin, a softly painted natural face with big dark eyes and a small nose (painted smoothly, no pixel blocks), wearing a magenta checked knitted hood that also covers her mouth and chin like a scarf, silver-grey tunic. Personality: Strong life force. Quick and cool in stress situations. Has very strong telepathic receptor skills.",
+   "original": "docs/modern/assets/sel/portrait_13_Tegra.png",
+   "who": "tegra"
+  },
+  "portrait.nik": {
+   "slot": "portrait.nik",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_nik.png",
+    "remake_art/refs/face_nik.png"
+   ],
+   "prompt": "Nik Relpo, Zembolian, age 30, navigation officer of a 1980s space cargo freighter. Appearance: teal-skinned humanoid with slicked-back black hair, a silver headset over the ears, rectangular glasses, square jaw; quilted silver-grey padded vest. Personality: Good listener & communicator. Seems to be reliable & loyal to current mission.",
+   "original": "docs/modern/assets/sel/portrait_14_Nik.png",
+   "who": "nik"
+  },
+  "portrait.bronx": {
+   "slot": "portrait.bronx",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_bronx.png",
+    "remake_art/refs/face_bronx.png"
+   ],
+   "prompt": "Bronxaag, Voraxian, age 72, navigation officer of a 1980s space cargo freighter. Appearance: an old bald alien with pale-grey wrinkled skin, round magenta-tinted spectacles, a small magenta spot marking on one cheek; teal shirt with a black chain necklace. Personality: Understands many different alien languages. Friendly and loyal. A quick thinker.",
+   "original": "docs/modern/assets/sel/portrait_15_Bronxaag.png",
+   "who": "bronx"
+  },
+  "portrait.aymu": {
+   "slot": "portrait.aymu",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_aymu.png",
+    "remake_art/refs/face_aymu.png"
+   ],
+   "prompt": "Mr. Aymu Skump, Jamico, age 30, navigation officer of a 1980s space cargo freighter. Appearance: a short humanoid with pale-grey skin and a thick mop of black hair falling over the forehead; his nose is ordinary in shape but its tip is coloured magenta, a natural Jamico skin marking (flat pigment, not a ball, not a clown nose); calm, slightly smug half-smile; dark uniform. Personality: Cool attitude. Very professional. Rugged. Communicates well with crew members and upper command.",
+   "original": "docs/modern/assets/sel/portrait_16_Aymu.png",
+   "who": "aymu"
+  },
+  "portrait.yenx": {
+   "slot": "portrait.yenx",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_yenx.png",
+    "remake_art/refs/face_yenx.png"
+   ],
+   "prompt": "Yenx, Jagon, age 210, navigation officer of a 1980s space cargo freighter. Appearance: a magenta octopus-like alien: a bulbous speckled magenta head, one large heavy-lidded eye, a thick trunk-like tentacle curling down from the face, smooth magenta body. Personality: Very quick with both natural judgment and body reactions to stressful situations. Very resilient.",
+   "original": "docs/modern/assets/sel/portrait_17_Yenx.png",
+   "who": "yenx"
+  },
+  "portrait.craven": {
+   "slot": "portrait.craven",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_craven.png",
+    "remake_art/refs/face_craven.png"
+   ],
+   "prompt": "Craven Micheals, Lollian, age 33, engineering officer of a 1980s space cargo freighter. Appearance: human-looking man with a teal cap, glasses, a long straight nose and a dry smile; magenta ribbed turtleneck sweater. Personality: Easy going, loyal. Very good troubleshooting skills. Communicates very well with crew & command.",
+   "original": "docs/modern/assets/sel/portrait_18_Craven.png",
+   "who": "craven"
+  },
+  "portrait.wilfo": {
+   "slot": "portrait.wilfo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_wilfo.png",
+    "remake_art/refs/face_wilfo.png"
+   ],
+   "prompt": "Wilfo, Bodian, age 400, engineering officer of a 1980s space cargo freighter. Appearance: a small round-headed teal alien with two thin antennae ending in silver balls, wide band-shaped silver goggles over the eyes, a tiny mouth; magenta scarf-like top. Personality: Good under stress. Very friendly, but keeps to himslf generally. Loyal. Has telepathic skills.",
+   "original": "docs/modern/assets/sel/portrait_19_Wilfo.png",
+   "who": "wilfo"
+  },
+  "portrait.tony": {
+   "slot": "portrait.tony",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_tony.png",
+    "remake_art/refs/face_tony.png"
+   ],
+   "prompt": "Anthony Frisina, Graphox, age 26, engineering officer of a 1980s space cargo freighter. Appearance: bald pale-grey head with a small teal tuft of hair on top, smooth painted magenta make-up rings around both eyes (soft airbrushed, no pixel blocks), a big friendly smile; magenta sweater with a soft knitted diamond pattern. Personality: Extremely quick. Effective communicator and engineering analyst. Very loyal and friendly.",
+   "original": "docs/modern/assets/sel/portrait_20_Anthony.png",
+   "who": "tony"
+  },
+  "portrait.fligrnk": {
+   "slot": "portrait.fligrnk",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_fligrnk.png",
+    "remake_art/refs/face_fligrnk.png"
+   ],
+   "prompt": "Fligronk Plgzur, Cirio, age 350, engineering officer of a 1980s space cargo freighter. Appearance: very old thin teal-skinned alien, bald domed head with a deeply wrinkled forehead, round glasses, a long face; teal and black horizontally striped shirt. Personality: Very resilient. Loyal and very serious about his job. Keeps to himself generally.",
+   "original": "docs/modern/assets/sel/portrait_21_Fligronk.png",
+   "who": "fligrnk"
+  },
+  "portrait.sheema": {
+   "slot": "portrait.sheema",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_sheema.png",
+    "remake_art/refs/face_sheema.png"
+   ],
+   "prompt": "Sheema Sampu, Titan, age 22, engineering officer of a 1980s space cargo freighter. Appearance: a young woman with pale-grey skin, long straight magenta hair with a dotted silver headband, teal-rimmed glasses; teal top. Personality: Above average ruggedness. Very good with vaccdroid communication. Has some telepathic skills.",
+   "original": "docs/modern/assets/sel/portrait_22_Sheema.png",
+   "who": "sheema"
+  },
+  "portrait.vx4": {
+   "slot": "portrait.vx4",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_vx4.png",
+    "remake_art/refs/face_vx4.png"
+   ],
+   "prompt": "VX-4 (Vaccdroid), Vaccdroid, age Newly active, engineering officer of a 1980s space cargo freighter. Appearance: a brand-new boxy robot: a squarish silver head with a teal side panel, two tall rectangular eye panels, a face of vertical slats, a ribbed silver neck, magenta chest plate. Personality: This model generally shows extreme ruggedness and top stress handling ability.",
+   "original": "docs/modern/assets/sel/portrait_23_VX4.png",
+   "who": "vx4"
+  },
+  "portrait.anxy": {
+   "slot": "portrait.anxy",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_anxy.png",
+    "remake_art/refs/face_anxy.png"
+   ],
+   "prompt": "Anxy, Toklar, age 43, repair officer of a 1980s space cargo freighter. Appearance: human-looking man with short black hair, a broad face, magenta-rimmed glasses and a wide grin; teal sweater. Personality: Very friendly, reliable and likable. Loyal to upper command as well as peers.",
+   "original": "docs/modern/assets/sel/portrait_24_Anxy.png",
+   "who": "anxy"
+  },
+  "portrait.t3": {
+   "slot": "portrait.t3",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_t3.png",
+    "remake_art/refs/face_t3.png"
+   ],
+   "prompt": "T3XR9 Model-4, Vaccdroid, age 7, repair officer of a 1980s space cargo freighter. Appearance: a repair robot: a round silver head with a horizontal-slat face grille and round ear discs, a silver body with teal panels, one claw arm. Personality: This vaccdroid is extremely reliable & loyal. Very friendly. Hard working and precise.",
+   "original": "docs/modern/assets/sel/portrait_25_T3XR9.png",
+   "who": "t3"
+  },
+  "portrait.vofgank": {
+   "slot": "portrait.vofgank",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_vofgank.png",
+    "remake_art/refs/face_vofgank.png"
+   ],
+   "prompt": "Volfgank (Hank), Tyrolean, age 37, repair officer of a 1980s space cargo freighter. Appearance: human-looking man with dark wavy hair, glasses, a small moustache, a serious face; teal turtleneck sweater. Personality: Initiates repairs. Precise, reliable worker. Vast knowledge of alien radar flight devices.",
+   "original": "docs/modern/assets/sel/portrait_26_Volfgank.png",
+   "who": "vofgank"
+  },
+  "portrait.ryblo": {
+   "slot": "portrait.ryblo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_ryblo.png",
+    "remake_art/refs/face_ryblo.png"
+   ],
+   "prompt": "Ryblo Flarn, Alpha, age 29, repair officer of a 1980s space cargo freighter. Appearance: pale-grey humanoid with a long pointed nose, glasses and a teal baseball cap worn forward; silver-grey work shirt with teal trim, a small repair tool in hand. Personality: Precise, reliable work. Works well with peers and is a very good source for contraband.",
+   "original": "docs/modern/assets/sel/portrait_27_Ryblo.png",
+   "who": "ryblo"
+  },
+  "portrait.bru": {
+   "slot": "portrait.bru",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_bru.png",
+    "remake_art/refs/face_bru.png"
+   ],
+   "prompt": "Bru Marmo, Leapion, age 31, repair officer of a 1980s space cargo freighter. Appearance: pale-grey humanoid with a silver-grey bob haircut with straight bangs, big black glasses, a small magenta nose tip; teal sweater. Personality: Very aggressive and honest nature. Works very hard and is a good leader and coordinator.",
+   "original": "docs/modern/assets/sel/portrait_28_Bru.png",
+   "who": "bru"
+  },
+  "portrait.swigltz": {
+   "slot": "portrait.swigltz",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/sel_swigltz.png",
+    "remake_art/refs/face_swigltz.png"
+   ],
+   "prompt": "Swiglitz, Altros, age 52, repair officer of a 1980s space cargo freighter. Appearance: a goat-like alien with pale-grey skin, wavy horn-like hair tendrils sticking out on both sides of the head, round eyes with teal eyelids, two buck teeth; teal ribbed shirt. Personality: Performs well in stressful situations. Can execute orders well. Loyal & friendly.",
+   "original": "docs/modern/assets/sel/portrait_29_Swiglitz.png",
+   "who": "swigltz"
+  },
+  "portrait.boris.stressed": {
+   "slot": "portrait.boris",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.boris/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.boris",
+   "variant": "stressed"
+  },
+  "portrait.q6d.stressed": {
+   "slot": "portrait.q6d",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.q6d/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.q6d",
+   "variant": "stressed"
+  },
+  "portrait.yeela.stressed": {
+   "slot": "portrait.yeela",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.yeela/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.yeela",
+   "variant": "stressed"
+  },
+  "portrait.alzott.stressed": {
+   "slot": "portrait.alzott",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.alzott/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.alzott",
+   "variant": "stressed"
+  },
+  "portrait.skulard.stressed": {
+   "slot": "portrait.skulard",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.skulard/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.skulard",
+   "variant": "stressed"
+  },
+  "portrait.grolo.stressed": {
+   "slot": "portrait.grolo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.grolo/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.grolo",
+   "variant": "stressed"
+  },
+  "portrait.jaru.stressed": {
+   "slot": "portrait.jaru",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.jaru/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.jaru",
+   "variant": "stressed"
+  },
+  "portrait.phyzo.stressed": {
+   "slot": "portrait.phyzo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.phyzo/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.phyzo",
+   "variant": "stressed"
+  },
+  "portrait.blustan.stressed": {
+   "slot": "portrait.blustan",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.blustan/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.blustan",
+   "variant": "stressed"
+  },
+  "portrait.nargo.stressed": {
+   "slot": "portrait.nargo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.nargo/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.nargo",
+   "variant": "stressed"
+  },
+  "portrait.churglk.stressed": {
+   "slot": "portrait.churglk",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.churglk/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.churglk",
+   "variant": "stressed"
+  },
+  "portrait.mike.stressed": {
+   "slot": "portrait.mike",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.mike/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.mike",
+   "variant": "stressed"
+  },
+  "portrait.klg.stressed": {
+   "slot": "portrait.klg",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.klg/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.klg",
+   "variant": "stressed"
+  },
+  "portrait.tegra.stressed": {
+   "slot": "portrait.tegra",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.tegra/2.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.tegra",
+   "variant": "stressed"
+  },
+  "portrait.nik.stressed": {
+   "slot": "portrait.nik",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.nik/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.nik",
+   "variant": "stressed"
+  },
+  "portrait.bronx.stressed": {
+   "slot": "portrait.bronx",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.bronx/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.bronx",
+   "variant": "stressed"
+  },
+  "portrait.aymu.stressed": {
+   "slot": "portrait.aymu",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.aymu/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.aymu",
+   "variant": "stressed"
+  },
+  "portrait.yenx.stressed": {
+   "slot": "portrait.yenx",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.yenx/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.yenx",
+   "variant": "stressed"
+  },
+  "portrait.craven.stressed": {
+   "slot": "portrait.craven",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.craven/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.craven",
+   "variant": "stressed"
+  },
+  "portrait.wilfo.stressed": {
+   "slot": "portrait.wilfo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.wilfo/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.wilfo",
+   "variant": "stressed"
+  },
+  "portrait.tony.stressed": {
+   "slot": "portrait.tony",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.tony/2.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.tony",
+   "variant": "stressed"
+  },
+  "portrait.fligrnk.stressed": {
+   "slot": "portrait.fligrnk",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.fligrnk/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.fligrnk",
+   "variant": "stressed"
+  },
+  "portrait.sheema.stressed": {
+   "slot": "portrait.sheema",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.sheema/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.sheema",
+   "variant": "stressed"
+  },
+  "portrait.vx4.stressed": {
+   "slot": "portrait.vx4",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.vx4/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.vx4",
+   "variant": "stressed"
+  },
+  "portrait.anxy.stressed": {
+   "slot": "portrait.anxy",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.anxy/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.anxy",
+   "variant": "stressed"
+  },
+  "portrait.t3.stressed": {
+   "slot": "portrait.t3",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.t3/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.t3",
+   "variant": "stressed"
+  },
+  "portrait.vofgank.stressed": {
+   "slot": "portrait.vofgank",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.vofgank/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.vofgank",
+   "variant": "stressed"
+  },
+  "portrait.ryblo.stressed": {
+   "slot": "portrait.ryblo",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.ryblo/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.ryblo",
+   "variant": "stressed"
+  },
+  "portrait.bru.stressed": {
+   "slot": "portrait.bru",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.bru/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.bru",
+   "variant": "stressed"
+  },
+  "portrait.swigltz.stressed": {
+   "slot": "portrait.swigltz",
+   "kind": "portrait",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/out/portrait.swigltz/1.png"
+   ],
+   "prompt": "Edit the attached portrait: the same character in the same pose and framing, now under combat stress: beads of sweat on the skin (none on robot parts, which instead show sparks and a flickering cracked visor), tense brow, wide alert eyes, clenched jaw, and a red alarm light washing over the scene from one side, the CRT screens behind flashing red. Keep the face, species, colours, clothing and painting style exactly the same. No text.",
+   "raw": true,
+   "needs": "portrait.swigltz",
+   "variant": "stressed"
+  },
+  "ship.class1": {
+   "slot": "ship.class1",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t1.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a wide, low flying wing whose two long wings slope down and out to sharp tips like a gull seen from the front, a small raised central cockpit dome with silver window highlights, two magenta lights under the centre.",
+   "original": "docs/modern/assets/psi5/ship_t1_0x6648.png",
+   "margin": 0.03
+  },
+  "ship.class2": {
+   "slot": "ship.class2",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t2.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: an oval central hull with a silver-windowed canopy, held inside two huge curved pincer arms that form a diamond-shaped claw frame to the left and right, magenta lights at the claw joints and under the hull.",
+   "original": "docs/modern/assets/psi5/ship_t2_0x67ce.png",
+   "margin": 0.03
+  },
+  "ship.class3": {
+   "slot": "ship.class3",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t3.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: two tall flat rectangular wing panels on the left and right, joined by horizontal struts to a compact central oval pod, a magenta light under the pod, silver highlights on the struts.",
+   "original": "docs/modern/assets/psi5/ship_t3_0x699c.png",
+   "margin": 0.03
+  },
+  "ship.class4": {
+   "slot": "ship.class4",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t4.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a layered flying saucer: a rounded upper dome with a magenta light, a wide flat rim, a lower skirt and a slim keel spike underneath ending in a magenta light.",
+   "original": "docs/modern/assets/psi5/ship_t4_0x6ad4.png",
+   "margin": 0.03
+  },
+  "ship.class5": {
+   "slot": "ship.class5",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t5.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a compact beetle-like central body with two magenta eye lights and silver highlights, two long thin arms angled up and out like raised antennae with magenta tips, and a flat oval base plate underneath.",
+   "original": "docs/modern/assets/psi5/ship_t5_0x6c76.png",
+   "margin": 0.03
+  },
+  "ship.class6": {
+   "slot": "ship.class6",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t6.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a central body with two magenta eye lights, wings bent into a wide W shape rising to magenta-tipped points, and a broad flat underside with two magenta lights.",
+   "original": "docs/modern/assets/psi5/ship_t6_0x6e48.png",
+   "margin": 0.03
+  },
+  "ship.class7": {
+   "slot": "ship.class7",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t7.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a flat broad bat-wing with straight leading edges, a small pointed central body with a glowing magenta core and two short horn-like antennae on top.",
+   "original": "docs/modern/assets/psi5/ship_t7_0x6fd4.png",
+   "margin": 0.03
+  },
+  "ship.class8": {
+   "slot": "ship.class8",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t8.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: an arched half-ring hull like a horseshoe standing on its open end, a silver window strip along the arch, magenta lights on both sides, and three splayed landing legs underneath.",
+   "original": "docs/modern/assets/psi5/ship_t8_0x711a.png",
+   "margin": 0.03
+  },
+  "ship.class9": {
+   "slot": "ship.class9",
+   "kind": "ship",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/ship_t9.png"
+   ],
+   "prompt": "A small hostile alien starship, redrawn from the attached pixel sprite: a heavier armoured cousin of an arched horseshoe-shaped lander: a thick arched hull with a silver window strip, extra engine pods on both sides, magenta lights, and three splayed landing legs.",
+   "original": "docs/modern/assets/psi5/ship_t8_0x711a.png",
+   "margin": 0.03
+  },
+  "shot.missile": {
+   "slot": "shot.missile",
+   "kind": "object",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/shot_missile.png"
+   ],
+   "prompt": "A single weapon projectile seen almost head-on, flying towards the viewer, redrawn from the attached pixel sprite: a sonic missile: a glowing magenta energy projectile shaped like two facing chevrons with a white-hot silver core, short light trail, with a soft glow.",
+   "original": "docs/modern/assets/psi5/shot_missile_0x7264.png",
+   "cut": "glow",
+   "margin": 0.02
+  },
+  "shot.blaster": {
+   "slot": "shot.blaster",
+   "kind": "object",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/shot_blaster.png"
+   ],
+   "prompt": "A single weapon projectile seen almost head-on, flying towards the viewer, redrawn from the attached pixel sprite: a blaster bolt: a compact square-ish glowing magenta plasma block with a cyan-white hot corner, short streak, with a soft glow.",
+   "original": "docs/modern/assets/psi5/shot_blaster_0x73b4.png",
+   "cut": "glow",
+   "margin": 0.02
+  },
+  "shot.cannon": {
+   "slot": "shot.cannon",
+   "kind": "object",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/shot_cannon.png"
+   ],
+   "prompt": "A single weapon projectile seen almost head-on, flying towards the viewer, redrawn from the attached pixel sprite: a cannon shell: a glowing magenta energy ring with silver highlights, like a pair of brackets around a bright core, with a soft glow.",
+   "original": "docs/modern/assets/psi5/shot_cannon_0x7482.png",
+   "cut": "glow",
+   "margin": 0.02
+  },
+  "shot.thermo": {
+   "slot": "shot.thermo",
+   "kind": "object",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/shot_thermo.png"
+   ],
+   "prompt": "A single weapon projectile seen almost head-on, flying towards the viewer, redrawn from the attached pixel sprite: a thermo charge: a swirling magenta and orange fireball shaped like a curled double arrow, intense white-hot centre, with a soft glow.",
+   "original": "docs/modern/assets/psi5/shot_thermo_0x75f8.png",
+   "cut": "glow",
+   "margin": 0.02
+  },
+  "fx.explosion": {
+   "slot": "fx.explosion",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [
+    "remake_art/refs/explosion.png"
+   ],
+   "prompt": "A single spaceship explosion seen head-on: a round burst of white-hot fire, amber and orange flame, flying silver-grey debris fragments and sparks, with a soft glowing smoke ring.",
+   "original": "docs/modern/assets/psi5/explosion_5.png",
+   "cut": "glow"
+  },
+  "bg.title": {
+   "slot": "bg.title",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Key art for the game: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, pulling away from Starbase 27, a huge ring-shaped space station with docking lights, above the glowing violet and blue Xaldur nebula and the curve of a magenta planet. Three small angular pirate raiders with glowing eye-lights approach in the far distance. Keep the upper third calmer so a title logo can sit there.",
+   "quality": "high",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "bg.select": {
+   "slot": "bg.select",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "A glowing holographic star chart of the Parvin Frontier projected on a large dark CRT map table aboard a starbase: amber grid lines, dotted route lines between a few star systems, small planet markers, chrome table edges, the dim control room around it. No readable text."
+  },
+  "map.course.0": {
+   "slot": "map.course.0",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "The destination planet Renlozen, a warm ochre and rust desert world with pale clouds, seen from orbit and filling the right half of the picture; a thin glowing amber dotted route line arcs in from the left towards it, starting at a tiny bright starbase. Deep blue space with stars. No spaceships anywhere in the picture."
+  },
+  "scene.arrival.0": {
+   "slot": "scene.arrival.0",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Arrival: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, entering orbit above Renlozen, a warm ochre and rust desert world with pale clouds, which fills the lower part of the picture. Deep space with stars.",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "map.course.1": {
+   "slot": "map.course.1",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "The destination planet Kozzar-7, a cold blue-white ice world with glowing cyan cracks, seen from orbit and filling the right half of the picture; a thin glowing amber dotted route line arcs in from the left towards it, starting at a tiny bright starbase. Deep blue space with stars. No spaceships anywhere in the picture."
+  },
+  "scene.arrival.1": {
+   "slot": "scene.arrival.1",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Arrival: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, entering orbit above Kozzar-7, a cold blue-white ice world with glowing cyan cracks, which fills the lower part of the picture. Deep space with stars.",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "map.course.2": {
+   "slot": "map.course.2",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "The destination planet Zipo-Aga, a lush green and teal jungle world with swirling storms, seen from orbit and filling the right half of the picture; a thin glowing amber dotted route line arcs in from the left towards it, starting at a tiny bright starbase. Deep blue space with stars. No spaceships anywhere in the picture."
+  },
+  "scene.arrival.2": {
+   "slot": "scene.arrival.2",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Arrival: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, entering orbit above Zipo-Aga, a lush green and teal jungle world with swirling storms, which fills the lower part of the picture. Deep space with stars.",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "map.course.3": {
+   "slot": "map.course.3",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "The destination planet Splyteux, a violet and magenta gas giant with bright rings, seen from orbit and filling the right half of the picture; a thin glowing amber dotted route line arcs in from the left towards it, starting at a tiny bright starbase. Deep blue space with stars. No spaceships anywhere in the picture."
+  },
+  "scene.arrival.3": {
+   "slot": "scene.arrival.3",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Arrival: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, entering orbit above Splyteux, a violet and magenta gas giant with bright rings, which fills the lower part of the picture. Deep space with stars.",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "scene.departure": {
+   "slot": "scene.departure",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "View through the curved bridge window of a cargo freighter: huge mechanical docking clamps swing open, the lit hull and windows of Starbase 27 recede, warning lamps blink amber, open space beyond."
+  },
+  "scene.aborted": {
+   "slot": "scene.aborted",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/arrival.png"
+   ],
+   "prompt": "Mission aborted: the PSI-5, a stubby cargo freighter with a domed saucer section and a long silver hull with engine pods, like the one in the attached 1986 pixel picture, badly damaged, limping back through space, trailing smoke and sparks from a torn engine pod and scorched hull plates, a red alarm light glow over the whole scene.",
+   "original": "docs/modern/assets/psi5/arrival.png"
+  },
+  "view.space.fore": {
+   "slot": "view.space.fore",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "Pure deep space, full frame: a soft blue and violet nebula, faint distant stars, a lot of calm dark space in the middle. No cockpit, no window frame, no console, no ships, no planets. Nothing else."
+  },
+  "view.space.aft": {
+   "slot": "view.space.aft",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "Pure deep space, full frame: a receding blue and violet nebula, faint distant stars, calm dark space in the middle, and only a soft warm amber light glow rising from the very bottom edge as if from engines out of view. No ship, no hull, no engines visible, no cockpit, no window frame. Nothing else."
+  },
+  "briefing.admiral": {
+   "slot": "briefing.admiral",
+   "kind": "tall",
+   "size": "1024x1536",
+   "refFiles": [],
+   "prompt": "Admiral Lorenzen, a grey-haired stern but kind fleet admiral in a dark blue uniform with gold braid, seated at his large desk at Starbase 27 command, a window onto space and docked ships behind him. At the top of the picture a printed letterhead band reading exactly \"STAR BASE 27 COMMAND\" in bold retro chrome letters, no other text.",
+   "raw": false,
+   "focus": 0.0
+  },
+  "ui.invoice": {
+   "slot": "ui.invoice",
+   "kind": "tall",
+   "size": "1024x1536",
+   "refFiles": [],
+   "prompt": "A flat scan of a sheet of 1980s continuous-feed computer printer paper, seen exactly straight on and filling the entire picture edge to edge (no desk, no background, no shadow around it): pale cream paper with faint pale-green horizontal bar stripes, a column of round tractor-feed holes along the left and right edges with perforation lines. At the top a printed letterhead in dark blue ink with a small round Psi emblem and the words exactly \"PSI 5 TRADING COMPANY\"; everything below the letterhead is blank paper (no other text, no numbers). Slight warm airbrushed paper texture.",
+   "focus": 0.0
+  },
+  "logo": {
+   "slot": "logo",
+   "kind": "object",
+   "size": "1536x1024",
+   "refFiles": [],
+   "prompt": "The title logo of a 1986 space trading game: the words exactly \"PSI 5 TRADING COMPANY\" on one line, in heavy bevelled chrome airbrushed letters with a magenta and cyan edge glow, a single star-burst lens flare on one letter. Exactly that text, correctly spelled, nothing else.",
+   "quality": "high",
+   "margin": 0.01
+  },
+  "dept.icon.weapons": {
+   "slot": "dept.icon.weapons",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A round enamel badge emblem for the weapons department of a 1980s starship crew: a crossed cannon barrel and missile, in teal, magenta and amber enamel with a polished chrome rim. Simple bold shapes readable at 40 pixels, no text, no letters.",
+   "margin": 0.02
+  },
+  "station.weapons": {
+   "slot": "station.weapons",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/station_weapons.png"
+   ],
+   "prompt": "The weapons console of a 1980s starship bridge, without any person: CRT screens with glowing graphics, rows of toggle switches and lamps, warm amber panel light, laid out like the console behind the crew member in the attached 1986 pixel picture. A wide low strip of console, seen from the operator seat.",
+   "focus": 0.55
+  },
+  "dept.icon.scanning": {
+   "slot": "dept.icon.scanning",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A round enamel badge emblem for the scanning department of a 1980s starship crew: a radar dish with sweeping beam rings, in teal, magenta and amber enamel with a polished chrome rim. Simple bold shapes readable at 40 pixels, no text, no letters.",
+   "margin": 0.02
+  },
+  "station.scanning": {
+   "slot": "station.scanning",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/station_scanning.png"
+   ],
+   "prompt": "The scanning console of a 1980s starship bridge, without any person: CRT screens with glowing graphics, rows of toggle switches and lamps, warm amber panel light, laid out like the console behind the crew member in the attached 1986 pixel picture. A wide low strip of console, seen from the operator seat.",
+   "focus": 0.55
+  },
+  "dept.icon.navigation": {
+   "slot": "dept.icon.navigation",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A round enamel badge emblem for the navigation department of a 1980s starship crew: a compass star over a curved orbit line, in teal, magenta and amber enamel with a polished chrome rim. Simple bold shapes readable at 40 pixels, no text, no letters.",
+   "margin": 0.02
+  },
+  "station.navigation": {
+   "slot": "station.navigation",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/station_navigation.png"
+   ],
+   "prompt": "The navigation console of a 1980s starship bridge, without any person: CRT screens with glowing graphics, rows of toggle switches and lamps, warm amber panel light, laid out like the console behind the crew member in the attached 1986 pixel picture. A wide low strip of console, seen from the operator seat.",
+   "focus": 0.55
+  },
+  "dept.icon.engineering": {
+   "slot": "dept.icon.engineering",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A round enamel badge emblem for the engineering department of a 1980s starship crew: a reactor atom symbol with a lightning bolt, in teal, magenta and amber enamel with a polished chrome rim. Simple bold shapes readable at 40 pixels, no text, no letters.",
+   "margin": 0.02
+  },
+  "station.engineering": {
+   "slot": "station.engineering",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/station_engineering.png"
+   ],
+   "prompt": "The engineering console of a 1980s starship bridge, without any person: CRT screens with glowing graphics, rows of toggle switches and lamps, warm amber panel light, laid out like the console behind the crew member in the attached 1986 pixel picture. A wide low strip of console, seen from the operator seat.",
+   "focus": 0.55
+  },
+  "dept.icon.repair": {
+   "slot": "dept.icon.repair",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A round enamel badge emblem for the repair department of a 1980s starship crew: a crossed wrench and screwdriver, in teal, magenta and amber enamel with a polished chrome rim. Simple bold shapes readable at 40 pixels, no text, no letters.",
+   "margin": 0.02
+  },
+  "station.repair": {
+   "slot": "station.repair",
+   "kind": "wide",
+   "size": "1536x1024",
+   "refFiles": [
+    "remake_art/refs/station_repair.png"
+   ],
+   "prompt": "The repair console of a 1980s starship bridge, without any person: CRT screens with glowing graphics, rows of toggle switches and lamps, warm amber panel light, laid out like the console behind the crew member in the attached 1986 pixel picture. A wide low strip of console, seen from the operator seat.",
+   "focus": 0.55
+  },
+  "ui.bezel": {
+   "slot": "ui.bezel",
+   "kind": "object",
+   "size": "1024x1024",
+   "refFiles": [],
+   "prompt": "A square picture frame for a computer panel, seen straight on: thick brushed beige plastic of a 1980s computer monitor bezel with rounded inner corners and a small chrome screw in each corner; the frame border is about one sixth of the width on every side and the inside of the frame is an empty pure black hole. Symmetrical.",
+   "cut": "frame"
+  }
+ }
+}

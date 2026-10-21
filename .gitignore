@@ -1,0 +1,37 @@
+# secrets
+.env
+# the original game as installed from GOG — not ours to redistribute (the web build carries only the data files in web/game/)
+/*.EXE
+/*.exe
+/*.BIN
+/*.com
+/*.dat
+/*.ini
+/*.msg
+/*.ico
+/*.lnk
+/*.hashdb
+/*.info
+/EULA.txt
+/webcache.zip
+/dosbox_windows/
+# generated art sources, cost logs
+remake_art/out/
+remake_art/picked/
+remake_art/archive/
+remake_art/spend.json
+remake_art/spend.jsonl
+remake_art/run_*.log
+# heavy test output (recordings, bot runs, screenshots, emulator bundles)
+tools/calls/
+tools/diffout/
+tools/bots/out/*.json
+_dosref/*.jsdos
+_dosref/shots/
+_dosref/cmp/
+_dosref/lockstep/
+re/shots/
+docs/remake/screenshots/
+node_modules/
+__pycache__/
+*.log

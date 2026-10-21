@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ctext x=%2216%22 y=%2226%22 font-size=%2226%22 text-anchor=%22middle%22 fill=%22%2300d0d0%22%3E%CE%A8%3C/text%3E%3C/svg%3E">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b1f">
+<title>Psi 5 Trading Company</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,800;1,800&family=PT+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- language switch, always reachable -->
+  <div id="lang-switch" class="seg small">
+    <button data-lang="ru">RU</button><button data-lang="en">EN</button>
+  </div>
+
+  <section id="scr-loading" class="screen active"><p class="loading" data-i18n="remake.loading">Loading…</p></section>
+
+  <section id="scr-title" class="screen art-bg" data-art="bg.title">
+    <div class="title-box">
+      <h1 class="logo" data-art-logo><span>PSI 5</span><small>TRADING COMPANY</small></h1>
+      <p class="subtitle" data-i18n="remake.title.subtitle"></p>
+      <div class="col-buttons">
+        <button class="btn primary" data-act="new" data-i18n="remake.title.new"></button>
+        <button class="btn" data-act="tutorial" data-i18n="remake.title.tutorial"></button>
+        <button class="btn" data-act="howto" data-i18n="remake.title.howto"></button>
+        <button class="btn" data-act="settings" data-i18n="remake.settings"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="scr-course" class="screen sel-bg">
+    <div class="sel-wrap">
+      <header class="sel-head"><h2 data-i18n="remake.course.title"></h2></header>
+      <p class="orders" data-i18n="sel.orders"></p>
+      <div id="course-list" class="course-list"></div>
+      <footer class="sel-foot"><button class="btn ghost" data-act="toTitle" data-i18n="remake.back"></button></footer>
+    </div>
+  </section>
+
+  <section id="scr-crew" class="screen sel-bg">
+    <div class="sel-wrap">
+      <header class="sel-head">
+        <div id="crew-steps" class="steps"></div>
+        <h2 id="crew-title"></h2>
+      </header>
+      <div id="crew-grid" class="crew-grid"></div>
+      <footer class="sel-foot"><button class="btn ghost" data-act="crewBack" data-i18n="remake.back"></button></footer>
+    </div>
+  </section>
+
+  <section id="scr-summary" class="screen sel-bg">
+    <div class="sel-wrap">
+      <header class="sel-head"><h2 data-i18n="remake.summary.title"></h2></header>
+      <p id="summary-course" class="orders"></p>
+      <div id="summary-grid" class="summary-grid"></div>
+      <footer class="sel-foot">
+        <button class="btn ghost" data-act="reselect" data-i18n="sel.reselect"></button>
+        <button class="btn primary" data-act="accept" data-i18n="sel.accept"></button>
+      </footer>
+    </div>
+  </section>
+
+  <section id="scr-briefing" class="screen sel-bg">
+    <div class="letter">
+      <div class="letter-art" id="briefing-art"></div>
+      <div class="letter-text">
+        <p class="letter-head" data-i18n="ui.briefing.signTitle"></p>
+        <p data-i18n="ui.briefing.body"></p>
+        <p id="briefing-course" class="letter-course"></p>
+        <p class="letter-sign" data-i18n="ui.briefing.sign"></p>
+        <button class="btn primary big" data-act="begin" data-i18n="remake.briefing.begin"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="scr-bridge" class="screen">
+    <header id="strip" class="strip"></header>
+    <div id="bridge-main" class="bridge-main" data-tab="weapons">
+      <div class="left-col">
+        <div id="viewscreen" class="viewscreen">
+          <canvas id="cv-main"></canvas>
+          <div class="inset"><canvas id="cv-inset"></canvas><span id="inset-label"></span></div>
+          <div id="bearings" class="bearings"></div>
+          <div id="headline" class="headline"></div>
+          <div class="scanlines"></div>
+        </div>
+        <div id="console" class="console"></div>
+      </div>
+      <div id="panels" class="panels">
+        <section class="dept-panel" id="p-weapons" data-dept="0"></section>
+        <section class="dept-panel" id="p-scanning" data-dept="1"></section>
+        <section class="dept-panel" id="p-navigation" data-dept="2"></section>
+        <section class="dept-panel" id="p-engineering" data-dept="3"></section>
+        <section class="dept-panel" id="p-repair" data-dept="4"></section>
+        <section class="dept-panel" id="p-systems"></section>
+      </div>
+    </div>
+    <nav id="tabbar" class="tabbar"></nav>
+  </section>
+
+  <section id="scr-invoice" class="screen sel-bg">
+    <div class="invoice-wrap">
+      <div id="invoice" class="invoice"></div>
+      <footer class="sel-foot">
+        <button class="btn" data-act="sameCrew" data-i18n="quit.sameCrew"></button>
+        <button class="btn primary" data-act="newCrew" data-i18n="quit.newCrew"></button>
+      </footer>
+    </div>
+  </section>
+
+  <!-- overlays -->
+  <div id="ov-pause" class="overlay" hidden>
+    <div class="dialog">
+      <h2 data-i18n="ui.pause.title"></h2>
+      <div class="col-buttons">
+        <button class="btn primary" data-act="resume" data-i18n="remake.continue"></button>
+        <button class="btn" data-act="settings" data-i18n="remake.settings"></button>
+        <button class="btn ghost" data-act="abandon" data-i18n="remake.quitToTitle"></button>
+      </div>
+    </div>
+  </div>
+  <div id="ov-settings" class="overlay" hidden>
+    <div class="dialog">
+      <h2 data-i18n="remake.settings"></h2>
+      <label class="set-row"><span data-i18n="remake.language"></span>
+        <span class="seg"><button data-lang="ru">Русский</button><button data-lang="en">English</button></span></label>
+      <label class="set-row"><span data-i18n="remake.preset"></span>
+        <span class="seg"><button data-preset="original" data-i18n="remake.preset.original"></button><button data-preset="modern" data-i18n="remake.preset.modern"></button></span></label>
+      <p class="note" data-i18n="remake.preset.note"></p>
+      <label class="set-row"><span data-i18n="remake.sound"></span>
+        <span class="seg"><button data-sound="1" data-i18n="remake.on"></button><button data-sound="0" data-i18n="remake.off"></button></span></label>
+      <label class="set-row"><span data-i18n="remake.volume"></span><input id="volume" type="range" min="0" max="1" step="0.05"></label>
+      <label class="set-row"><span data-i18n="remake.tips.setting"></span>
+        <span class="seg"><button data-tips="1" data-i18n="remake.on"></button><button data-tips="0" data-i18n="remake.off"></button></span></label>
+      <div class="col-buttons">
+        <button class="btn" id="set-tutorial" data-act="tutorial" data-i18n="remake.title.tutorial"></button><button class="btn primary" data-act="closeSettings" data-i18n="remake.close"></button></div>
+    </div>
+  </div>
+  <div id="ov-offer" class="overlay" hidden>
+    <div class="dialog offer">
+      <div class="coach-head"><span class="coach-ava" aria-hidden="true"></span><b data-i18n="remake.tutorial.coach"></b></div>
+      <h2 data-i18n="remake.tutorial.offer.title"></h2>
+      <p data-i18n="remake.tutorial.offer.text"></p>
+      <p class="note" data-i18n="remake.tutorial.offer.note"></p>
+      <div class="col-buttons">
+        <button class="btn primary" data-act="tutorial" data-i18n="remake.tutorial.offer.start"></button>
+        <button class="btn ghost" data-act="offerLater" data-i18n="remake.tutorial.offer.later"></button>
+      </div>
+    </div>
+  </div>
+  <div id="sheet" class="overlay sheet-ov" hidden><div class="sheet" id="sheet-body"></div></div>
+  <div id="toasts" class="toasts"></div>
+</div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

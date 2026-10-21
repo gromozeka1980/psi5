@@ -1,0 +1,34 @@
+f_0082 273 GEN f_03b5 f_044d f_04a4 f_054e f_06db f_0895 f_094a f_09c8 f_0b05 f_0c26 f_0c78 f_0d50 f_0dba f_0dd7 f_0efe f_0f98 f_0fad f_0ff3 f_1011 f_11fc f_1204 f_125e
+f_03b5 48 GEN f_0f98 f_1004
+f_044d 29     f_0b05
+f_04a4 54     f_0582 f_0647 f_0676 f_0b05 f_0fad
+f_054e 21     f_0582
+f_0582 63     f_0e31 f_0fad
+f_0647 20     f_0efe
+f_0676 33     f_0fad
+f_06db 117 GEN f_0b05 f_0c09 f_0dba f_0e31 f_0efe f_0f48 f_0fad
+f_0895 62     f_0c09
+f_094a 36     f_0676 f_0a46 f_0b05 f_0fad
+f_09c8 40     f_0c09
+f_0a46 64     f_0647 f_0676 f_0e31 f_0fad
+f_0b05 104     f_0e31 f_0fad
+f_0c09 11     f_0e31
+f_0c26 32     
+f_0c78 23     
+f_0ca9 66     
+f_0d50 22     
+f_0dba 12     
+f_0dd7 22     f_0dba
+f_0e31 58     
+f_0efe 31     
+f_0f48 27 GEN 
+f_0f98 10 GEN f_1080
+f_0fad 17     
+f_0ff3 5     
+f_1004 4     
+f_1011 13 GEN 
+f_1080 133     
+f_11fc 5     
+f_1204 34     f_127a
+f_125e 14     
+f_127a 9     

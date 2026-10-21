@@ -1,0 +1,1356 @@
+{
+ "_about": "Art slots of the remake UI (docs/remake/UI.md). size = delivery size in px; aspect is fixed, the UI scales. Style for every slot: 1980s retro-futurist sci-fi paperback / box-art: airbrush, warm amber key light, deep blue space, soft glow. transparent = with alpha. variants = extra slots <id>.<variant> (calm = the base id). Placeholders are under docs/modern/assets/. Finished art: tools/remake_art.py pick/export writes remake_art/picked/<id>.png (master) and web/remake/art/<id>.webp + <id>.s.webp (phone size) + manifest.json (docs/remake/UI.md section 6); the UI uses it when the id is in the manifest.",
+ "style": "1980s retro-futurist sci-fi paperback / box-art: airbrush, warm amber key light, deep blue space, soft glow",
+ "count": 72,
+ "slots": [
+  {
+   "id": "logo",
+   "size": [
+    1600,
+    400
+   ],
+   "aspect": "4:1",
+   "transparent": true,
+   "shows": "Title logo \"PSI 5 TRADING COMPANY\", chrome/airbrush lettering with a lens flare",
+   "usedIn": [
+    "title"
+   ],
+   "placeholder": "CSS text"
+  },
+  {
+   "id": "bg.title",
+   "size": [
+    1920,
+    1080
+   ],
+   "aspect": "16:9",
+   "transparent": false,
+   "shows": "Key art: the PSI-5 cargo freighter leaving Starbase 27 above the Xaldur nebula, pirate ships in the distance",
+   "usedIn": [
+    "title",
+    "settings backdrop"
+   ],
+   "placeholder": "sel/title.png (pixelated)"
+  },
+  {
+   "id": "bg.select",
+   "size": [
+    1920,
+    1080
+   ],
+   "aspect": "16:9",
+   "transparent": false,
+   "shows": "Star chart of the Parvin Frontier on a CRT table, amber grid lines",
+   "usedIn": [
+    "course selection",
+    "crew selection",
+    "summary"
+   ],
+   "placeholder": "CSS gradient + grid"
+  },
+  {
+   "id": "map.course.0",
+   "size": [
+    800,
+    600
+   ],
+   "aspect": "4:3",
+   "transparent": false,
+   "shows": "Destination planet Renlozen (cargo: Frybluts) seen from orbit, route line from Starbase 27",
+   "usedIn": [
+    "course card"
+   ],
+   "placeholder": "CSS planet (radial gradient)"
+  },
+  {
+   "id": "map.course.1",
+   "size": [
+    800,
+    600
+   ],
+   "aspect": "4:3",
+   "transparent": false,
+   "shows": "Destination planet Kozzar-7 (cargo: Nucliarc) seen from orbit, route line from Starbase 27",
+   "usedIn": [
+    "course card"
+   ],
+   "placeholder": "CSS planet (radial gradient)"
+  },
+  {
+   "id": "map.course.2",
+   "size": [
+    800,
+    600
+   ],
+   "aspect": "4:3",
+   "transparent": false,
+   "shows": "Destination planet Zipo-Aga (cargo: Grananas) seen from orbit, route line from Starbase 27",
+   "usedIn": [
+    "course card"
+   ],
+   "placeholder": "CSS planet (radial gradient)"
+  },
+  {
+   "id": "map.course.3",
+   "size": [
+    800,
+    600
+   ],
+   "aspect": "4:3",
+   "transparent": false,
+   "shows": "Destination planet Splyteux (cargo: Prebliks) seen from orbit, route line from Starbase 27",
+   "usedIn": [
+    "course card"
+   ],
+   "placeholder": "CSS planet (radial gradient)"
+  },
+  {
+   "id": "portrait.alzott",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Al (Bull's Eye) Zott, Olerio, age 32, weapons officer. Bust portrait at their bridge station. Personality: Professional & strong leader. Tactical & technical expert. Single. Cool under pressure. / Poor with missiles. Hot tempered! Independent & a loner. Tends to be rebellious.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_03_Al.png (selection), crew/ALZOTT_face.png (bridge)"
+  },
+  {
+   "id": "portrait.anxy",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Anxy, Toklar, age 43, repair officer. Bust portrait at their bridge station. Personality: Very friendly, reliable and likable. Loyal to upper command as well as peers. / Doesn't like to be interrupted or hurried while working. Also doesn't like high risk missions.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_24_Anxy.png (selection), crew/ANXY_face.png (bridge)"
+  },
+  {
+   "id": "portrait.aymu",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Mr. Aymu Skump, Jamico, age 30, navigation officer. Bust portrait at their bridge station. Personality: Cool attitude. Very professional. Rugged. Communicates well with crew members and upper command. / Slow response time Sometimes too occupied with policy and politics when he should be responsive.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_16_Aymu.png (selection), crew/AYMU_face.png (bridge)"
+  },
+  {
+   "id": "portrait.blustan",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Blustan, Reptilius, age 112, scanning officer. Bust portrait at their bridge station. Personality: Communicates well. Has a logically structured mind & speaks 4 languages. Finishes jobs efficiently. / Can't handle stress Gossips & is inquisitive. Has never exhibited any self-motivation.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_08_Blustan.png (selection), crew/BLUSTAN_face.png (bridge)"
+  },
+  {
+   "id": "portrait.boris",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Boris Tarkov, Jargonian, age 47, weapons officer. Bust portrait at their bridge station. Personality: No family. Fearless. aggressive & precise. Quick reactions. Has a passion for combat. / Suspicious of others. Is a loner and a poor communicator. Lousy with blasters.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_00_Boris.png (selection), crew/BORIS_face.png (bridge)"
+  },
+  {
+   "id": "portrait.bronx",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Bronxaag, Voraxian, age 72, navigation officer. Bust portrait at their bridge station. Personality: Understands many different alien languages. Friendly and loyal. A quick thinker. / Has a long history of strange behaviors and nervousness. Extremely frail individual.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_15_Bronxaag.png (selection), crew/BRONX_face.png (bridge)"
+  },
+  {
+   "id": "portrait.bru",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Bru Marmo, Leapion, age 31, repair officer. Bust portrait at their bridge station. Personality: Very aggressive and honest nature. Works very hard and is a good leader and coordinator. / Sometimes displays a 'bossy' attitude towards peers. Has offended superior officers in past.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_28_Bru.png (selection), crew/BRU_face.png (bridge)"
+  },
+  {
+   "id": "portrait.churglk",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Churglik, Flipogian, age 340, scanning officer. Bust portrait at their bridge station. Personality: Loyal & dependable Good self-motivation. Excellent endurance levels. Communicates well. / Gets nervous & flusters easily. Doesn't work quickly under pressure situations.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_10_Churglik.png (selection), crew/CHURGLK_face.png (bridge)"
+  },
+  {
+   "id": "portrait.craven",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Craven Micheals, Lollian, age 33, engineering officer. Bust portrait at their bridge station. Personality: Easy going, loyal. Very good troubleshooting skills. Communicates very well with crew & command. / Tends to be passive by nature and clumsy in stressful situations.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_18_Craven.png (selection), crew/CRAVEN_face.png (bridge)"
+  },
+  {
+   "id": "portrait.fligrnk",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Fligronk Plgzur, Cirio, age 350, engineering officer. Bust portrait at their bridge station. Personality: Very resilient. Loyal and very serious about his job. Keeps to himself generally. / Excitable nature and has a violent temper when threatened or challenged.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_21_Fligronk.png (selection), crew/FLIGRNK_face.png (bridge)"
+  },
+  {
+   "id": "portrait.grolo",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Grolo, Scollian, age 17, weapons officer. Bust portrait at their bridge station. Personality: Even tempered, friendly & helpful. A sharp thinker. Known as a very good shot. / Has a very large appetite. Poor with thermo weapons. Not very well self-motivated.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_05_Grolo.png (selection), crew/GROLO_face.png (bridge)"
+  },
+  {
+   "id": "portrait.jaru",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Jaru Lagon, Palagonon, age 127, scanning officer. Bust portrait at their bridge station. Personality: Efficient, precise & self- motivated. Independent aggressive nature. / Communicates poorly with males and vaccdroids. Doesn't take commands well. Can't handle stress well.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_06_Jaru.png (selection), crew/JARU_face.png (bridge)"
+  },
+  {
+   "id": "portrait.klg",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "KLG-7A, Vaccdroid, age 6, navigation officer. Bust portrait at their bridge station. Personality: Acute eyesight & very precise in his actions. Extremely rugged individual. / Has a strong liking for joking around. Poor at evasive maneuvers.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_12_KLG7A.png (selection), crew/KLG_face.png (bridge)"
+  },
+  {
+   "id": "portrait.mike",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Mike of Morgon, Hirolian, age 24, scanning officer. Bust portrait at their bridge station. Personality: Loves danger. Independent & friendly. Upper command material. Strong & gets his way. / Can be distracted easily. Is a family man who tends to overcommit. Poor with the new info scanners.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_11_Mike.png (selection), crew/MIKE_face.png (bridge)"
+  },
+  {
+   "id": "portrait.nargo",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Nargo Kloya, Lighton, age 16, scanning officer. Bust portrait at their bridge station. Personality: Good communicator. Responds well under stress. Friendly, but shy. Very strong telepathic skills. / Quiet, sometimes to an extreme! Moody & socially introvered during long missions.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_09_Nargo.png (selection), crew/NARGO_face.png (bridge)"
+  },
+  {
+   "id": "portrait.nik",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Nik Relpo, Zembolian, age 30, navigation officer. Bust portrait at their bridge station. Personality: Good listener & communicator. Seems to be reliable & loyal to current mission. / Doesn't socialize well with others. Doesn't have many friends. Frail.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_14_Nik.png (selection), crew/NIK_face.png (bridge)"
+  },
+  {
+   "id": "portrait.phyzo",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Phyzo Thynx, Dragoolas, age 25, scanning officer. Bust portrait at their bridge station. Personality: Strong telepathic senses. Responds to commands well. Reacts well under pressure. / Poor verbal communicator. Weak performer with most tracking lock systems.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_07_Phyzo.png (selection), crew/PHYZO_face.png (bridge)"
+  },
+  {
+   "id": "portrait.q6d",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Q6-D, Vaccdroid, age 12, weapons officer. Bust portrait at their bridge station. Personality: Quick thinking. Cool in most situations. Communicates clearly. / Inexperienced. Uses programmed responses & required protocol in communications.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_01_Q6D.png (selection), crew/Q6D_face.png (bridge)"
+  },
+  {
+   "id": "portrait.ryblo",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Ryblo Flarn, Alpha, age 29, repair officer. Bust portrait at their bridge station. Personality: Precise, reliable work. Works well with peers and is a very good source for contraband. / Is sometimes lazy and has a temper. Also has a hard time communicating with upper command.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_27_Ryblo.png (selection), crew/RYBLO_face.png (bridge)"
+  },
+  {
+   "id": "portrait.sheema",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Sheema Sampu, Titan, age 22, engineering officer. Bust portrait at their bridge station. Personality: Above average ruggedness. Very good with vaccdroid communication. Has some telepathic skills. / Can be overly deliberate with her duties. Doesn't like risky or stressful situations.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_22_Sheema.png (selection), crew/SHEEMA_face.png (bridge)"
+  },
+  {
+   "id": "portrait.skulard",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Skulard Prablyk, Balnarvian, age 40, weapons officer. Bust portrait at their bridge station. Personality: Quick & precise. Has a wide range of body temperature tolerance. Fluent in Zabian languages. / Sometimes gets philisophical regarding decisions and actions of others.Poor stress reaction. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_04_Skulard.png (selection), crew/SKULARD_face.png (bridge)"
+  },
+  {
+   "id": "portrait.swigltz",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Swiglitz, Altros, age 52, repair officer. Bust portrait at their bridge station. Personality: Performs well in stressful situations. Can execute orders well. Loyal & friendly. / Has some old enemy- aquaintances who seem to track his whereabouts. Weak on engine repairs.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_29_Swiglitz.png (selection), crew/SWIGLTZ_face.png (bridge)"
+  },
+  {
+   "id": "portrait.t3",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "T3XR9 Model-4, Vaccdroid, age 7, repair officer. Bust portrait at their bridge station. Personality: This vaccdroid is extremely reliable & loyal. Very friendly. Hard working and precise. / Sometimes can overwork himself because of his extreme loyalty. Is not self-motivating.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_25_T3XR9.png (selection), crew/T3_face.png (bridge)"
+  },
+  {
+   "id": "portrait.tegra",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Tegra Kloya, Lighton, age 26, navigation officer. Bust portrait at their bridge station. Personality: Strong life force. Quick and cool in stress situations. Has very strong telepathic receptor skills. / Inexperienced. Has a temper if challenged. Tends to play with her telepathic abilities.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_13_Tegra.png (selection), crew/TEGRA_face.png (bridge)"
+  },
+  {
+   "id": "portrait.tony",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Anthony Frisina, Graphox, age 26, engineering officer. Bust portrait at their bridge station. Personality: Extremely quick. Effective communicator and engineering analyst. Very loyal and friendly. / Tends to be worrisome in stressful situations.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_20_Anthony.png (selection), crew/TONY_face.png (bridge)"
+  },
+  {
+   "id": "portrait.vofgank",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Volfgank (Hank), Tyrolean, age 37, repair officer. Bust portrait at their bridge station. Personality: Initiates repairs. Precise, reliable worker. Vast knowledge of alien radar flight devices. / Loner type. Keeps to himself. Also is not a good communicator. Doesn't like high risk assignments.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_26_Volfgank.png (selection), crew/VOFGANK_face.png (bridge)"
+  },
+  {
+   "id": "portrait.vx4",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "VX-4 (Vaccdroid), undefined, age Newly active, engineering officer. Bust portrait at their bridge station. Personality: This model generally shows extreme ruggedness and top stress handling ability. / Although individual units vary, this model generally performs slower than most.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_23_VX4.png (selection), crew/VX4_face.png (bridge)"
+  },
+  {
+   "id": "portrait.wilfo",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Wilfo, Bodian, age 400, engineering officer. Bust portrait at their bridge station. Personality: Good under stress. Very friendly, but keeps to himslf generally. Loyal. Has telepathic skills. / Excitable and has a temper when challenged. Rather frail physical specimen.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_19_Wilfo.png (selection), crew/WILFO_face.png (bridge)"
+  },
+  {
+   "id": "portrait.yeela",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Yeela, Glork, age 270, weapons officer. Bust portrait at their bridge station. Personality: Reliable, loyal & friendly. Good natural judgement. Has telepathic ability. / Can't handle stress Sometimes too emotional. Not very self-motivated. No other information.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_02_Yeela.png (selection), crew/YEELA_face.png (bridge)"
+  },
+  {
+   "id": "portrait.yenx",
+   "size": [
+    512,
+    512
+   ],
+   "aspect": "1:1",
+   "transparent": false,
+   "variants": [
+    "calm",
+    "stressed",
+    "dead"
+   ],
+   "shows": "Yenx, Jagon, age 210, navigation officer. Bust portrait at their bridge station. Personality: Very quick with both natural judgment and body reactions to stressful situations. Very resilient. / Sometimes a dreamer and can easily be distracted.. Variant stressed: sweating, alarm-red light; dead: greyed memorial frame",
+   "usedIn": [
+    "crew card",
+    "resume sheet",
+    "summary",
+    "department panel header",
+    "officer console",
+    "message toast"
+   ],
+   "placeholder": "sel/portrait_17_Yenx.png (selection), crew/YENX_face.png (bridge)"
+  },
+  {
+   "id": "briefing.admiral",
+   "size": [
+    768,
+    1024
+   ],
+   "aspect": "3:4",
+   "transparent": false,
+   "shows": "Admiral Lorenzen at his Starbase 27 desk, letterhead \"STAR BASE 27 COMMAND\"",
+   "usedIn": [
+    "briefing"
+   ],
+   "placeholder": "CSS letter card"
+  },
+  {
+   "id": "scene.departure",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "View from the bridge window: docking clamps releasing, Starbase 27 lights",
+   "usedIn": [
+    "viewscreen during departure"
+   ],
+   "placeholder": "CSS gradient + headline"
+  },
+  {
+   "id": "scene.arrival.0",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Arrival in orbit of Renlozen",
+   "usedIn": [
+    "viewscreen at arrival",
+    "invoice header"
+   ],
+   "placeholder": "psi5/arrival.png (pixelated)"
+  },
+  {
+   "id": "scene.arrival.1",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Arrival in orbit of Kozzar-7",
+   "usedIn": [
+    "viewscreen at arrival",
+    "invoice header"
+   ],
+   "placeholder": "psi5/arrival.png (pixelated)"
+  },
+  {
+   "id": "scene.arrival.2",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Arrival in orbit of Zipo-Aga",
+   "usedIn": [
+    "viewscreen at arrival",
+    "invoice header"
+   ],
+   "placeholder": "psi5/arrival.png (pixelated)"
+  },
+  {
+   "id": "scene.arrival.3",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Arrival in orbit of Splyteux",
+   "usedIn": [
+    "viewscreen at arrival",
+    "invoice header"
+   ],
+   "placeholder": "psi5/arrival.png (pixelated)"
+  },
+  {
+   "id": "scene.aborted",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Mission aborted: damaged freighter limping back, red alarm light on the bridge window",
+   "usedIn": [
+    "viewscreen at mission abort",
+    "invoice header"
+   ],
+   "placeholder": "CSS red gradient"
+  },
+  {
+   "id": "view.space.fore",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Deep space ahead: nebula, distant stars (stars are animated on top by the game)",
+   "usedIn": [
+    "viewscreen fore"
+   ],
+   "placeholder": "CSS radial gradient"
+  },
+  {
+   "id": "view.space.aft",
+   "size": [
+    1024,
+    512
+   ],
+   "aspect": "2:1",
+   "transparent": false,
+   "shows": "Deep space behind: engine glow at the bottom edge, receding nebula",
+   "usedIn": [
+    "viewscreen aft + inset"
+   ],
+   "placeholder": "CSS radial gradient"
+  },
+  {
+   "id": "ship.class1",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 1 (sprite table entry 1: names per course in the scanner, e.g. Xantog/Zeltoad), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t1_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class2",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 2 (sprite table entry 2: names per course in the scanner, e.g. Zeltoad/Frisina), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t2_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class3",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 3 (sprite table entry 3: names per course in the scanner, e.g. Kiffbok/Waskul), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t3_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class4",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 4 (sprite table entry 4: names per course in the scanner, e.g. Narvik), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t4_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class5",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 5 (sprite table entry 5: names per course in the scanner, e.g. Skront/Wosk), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t5_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class6",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 6 (sprite table entry 6: names per course in the scanner, e.g. Flarkin/Flarkan), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t6_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class7",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 7 (sprite table entry 7: names per course in the scanner, e.g. Lepsor/Snograt/Muurdan), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t7_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class8",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 8 (sprite table entry 8: names per course in the scanner, e.g. Scout/Shuttle), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t8_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "ship.class9",
+   "size": [
+    512,
+    256
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "Alien ship of visual class 9 (sprite table entry 9: names per course in the scanner, e.g. Prato/Rybil/Sooly), front 3/4 view, drawn scaled by depth",
+   "usedIn": [
+    "combat view",
+    "fire popover",
+    "contacts list icon"
+   ],
+   "placeholder": "psi5/ship_t8_*.png nearest depth (pixelated)"
+  },
+  {
+   "id": "shot.missile",
+   "size": [
+    256,
+    128
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "missile projectile with glow, flying away from / towards the viewer",
+   "usedIn": [
+    "combat view",
+    "weapon buttons"
+   ],
+   "placeholder": "psi5/shot_missile_*.png"
+  },
+  {
+   "id": "shot.blaster",
+   "size": [
+    256,
+    128
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "blaster projectile with glow, flying away from / towards the viewer",
+   "usedIn": [
+    "combat view",
+    "weapon buttons"
+   ],
+   "placeholder": "psi5/shot_blaster_*.png"
+  },
+  {
+   "id": "shot.cannon",
+   "size": [
+    256,
+    128
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "cannon projectile with glow, flying away from / towards the viewer",
+   "usedIn": [
+    "combat view",
+    "weapon buttons"
+   ],
+   "placeholder": "psi5/shot_cannon_*.png"
+  },
+  {
+   "id": "shot.thermo",
+   "size": [
+    256,
+    128
+   ],
+   "aspect": "2:1",
+   "transparent": true,
+   "shows": "thermo projectile with glow, flying away from / towards the viewer",
+   "usedIn": [
+    "combat view",
+    "weapon buttons"
+   ],
+   "placeholder": "psi5/shot_thermo_*.png"
+  },
+  {
+   "id": "fx.explosion",
+   "size": [
+    2048,
+    256
+   ],
+   "aspect": "8:1 (8 frames of 256x256)",
+   "transparent": true,
+   "shows": "Explosion sprite sheet, 8 frames",
+   "usedIn": [
+    "combat view"
+   ],
+   "placeholder": "psi5/explosion_0..7.png"
+  },
+  {
+   "id": "dept.icon.weapons",
+   "size": [
+    128,
+    128
+   ],
+   "aspect": "1:1",
+   "transparent": true,
+   "shows": "Department emblem for weapons (enamel badge style)",
+   "usedIn": [
+    "tab bar",
+    "panel header",
+    "message lamp"
+   ],
+   "placeholder": "CSS letter in a lamp"
+  },
+  {
+   "id": "dept.icon.scanning",
+   "size": [
+    128,
+    128
+   ],
+   "aspect": "1:1",
+   "transparent": true,
+   "shows": "Department emblem for scanning (enamel badge style)",
+   "usedIn": [
+    "tab bar",
+    "panel header",
+    "message lamp"
+   ],
+   "placeholder": "CSS letter in a lamp"
+  },
+  {
+   "id": "dept.icon.navigation",
+   "size": [
+    128,
+    128
+   ],
+   "aspect": "1:1",
+   "transparent": true,
+   "shows": "Department emblem for navigation (enamel badge style)",
+   "usedIn": [
+    "tab bar",
+    "panel header",
+    "message lamp"
+   ],
+   "placeholder": "CSS letter in a lamp"
+  },
+  {
+   "id": "dept.icon.engineering",
+   "size": [
+    128,
+    128
+   ],
+   "aspect": "1:1",
+   "transparent": true,
+   "shows": "Department emblem for engineering (enamel badge style)",
+   "usedIn": [
+    "tab bar",
+    "panel header",
+    "message lamp"
+   ],
+   "placeholder": "CSS letter in a lamp"
+  },
+  {
+   "id": "dept.icon.repair",
+   "size": [
+    128,
+    128
+   ],
+   "aspect": "1:1",
+   "transparent": true,
+   "shows": "Department emblem for repair (enamel badge style)",
+   "usedIn": [
+    "tab bar",
+    "panel header",
+    "message lamp"
+   ],
+   "placeholder": "CSS letter in a lamp"
+  },
+  {
+   "id": "station.weapons",
+   "size": [
+    960,
+    320
+   ],
+   "aspect": "3:1",
+   "transparent": false,
+   "shows": "weapons console of the bridge: CRT screens, toggle switches, warm panel light (panel header background)",
+   "usedIn": [
+    "department panel header"
+   ],
+   "placeholder": "psi5/station_anim_d0_*.png first frame (pixelated) over CSS gradient"
+  },
+  {
+   "id": "station.scanning",
+   "size": [
+    960,
+    320
+   ],
+   "aspect": "3:1",
+   "transparent": false,
+   "shows": "scanning console of the bridge: CRT screens, toggle switches, warm panel light (panel header background)",
+   "usedIn": [
+    "department panel header"
+   ],
+   "placeholder": "psi5/station_anim_d1_*.png first frame (pixelated) over CSS gradient"
+  },
+  {
+   "id": "station.navigation",
+   "size": [
+    960,
+    320
+   ],
+   "aspect": "3:1",
+   "transparent": false,
+   "shows": "navigation console of the bridge: CRT screens, toggle switches, warm panel light (panel header background)",
+   "usedIn": [
+    "department panel header"
+   ],
+   "placeholder": "psi5/station_anim_d2_*.png first frame (pixelated) over CSS gradient"
+  },
+  {
+   "id": "station.engineering",
+   "size": [
+    960,
+    320
+   ],
+   "aspect": "3:1",
+   "transparent": false,
+   "shows": "engineering console of the bridge: CRT screens, toggle switches, warm panel light (panel header background)",
+   "usedIn": [
+    "department panel header"
+   ],
+   "placeholder": "psi5/station_anim_d3_*.png first frame (pixelated) over CSS gradient"
+  },
+  {
+   "id": "station.repair",
+   "size": [
+    960,
+    320
+   ],
+   "aspect": "3:1",
+   "transparent": false,
+   "shows": "repair console of the bridge: CRT screens, toggle switches, warm panel light (panel header background)",
+   "usedIn": [
+    "department panel header"
+   ],
+   "placeholder": "psi5/station_anim_d4_*.png first frame (pixelated) over CSS gradient"
+  },
+  {
+   "id": "ui.bezel",
+   "size": [
+    96,
+    96
+   ],
+   "aspect": "1:1 (9-slice, 32 px corners)",
+   "transparent": true,
+   "shows": "CRT console bezel frame for panels (brushed beige plastic + screws)",
+   "usedIn": [
+    "every panel",
+    "popovers"
+   ],
+   "placeholder": "CSS border + inset shadow"
+  },
+  {
+   "id": "ui.invoice",
+   "size": [
+    1024,
+    1400
+   ],
+   "aspect": "~3:4",
+   "transparent": false,
+   "shows": "Mission invoice paper with Psi 5 Trading Company letterhead, printer tractor-feed edges",
+   "usedIn": [
+    "invoice"
+   ],
+   "placeholder": "CSS paper"
+  }
+ ]
+}
